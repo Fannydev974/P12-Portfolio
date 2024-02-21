@@ -10,6 +10,12 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
+* {
+  font-family: 'Gumela';
+  font-weight: normal;
+  font-size: 17px;
+}
+
 .App {
   padding: 0.5rem 3.5rem;
   overflow: hidden;

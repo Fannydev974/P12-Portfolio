@@ -1,0 +1,16 @@
+.awesome {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.awesome>* {
+    color: var(--black);
+}
+
+.button {
+    width: 6rem;
+    height: 2rem;
+}
