@@ -1,5 +1,5 @@
 import React from 'react'
-import './travaux.css';
+import './compétence.css';
 import Html from '../../img/Html.png';
 import Css from '../../img/Css.png';
 import JavaScript from '../../img/icon JS.png';
@@ -12,11 +12,16 @@ const travaux = () => {
         <div className='works'>
             <div className='awesome'>
                 <span>Mes </span>
-                <span>réalisations</span>
-                <span>vhsdvcshdcbsducjbqudsjchnoqdsijkhcniojdshqnciojdshnicvos</span>
+                <span>Compétences</span>
+                <span>▸ Référencement SEO,</span>
+                <span> ▸ Méthode agile,</span>
+                <span>▸ Accessibilité</span>
+                <span>---------------------------</span>
+                <span>▸ Rigueur ▸ Autonomie ▸ Adaptibilité ▸ Curiosité</span>
+
 
                 <button className='button s-button'>Télécharger mon cv</button>
-                <div className='fondViolet' style={{ background: '#ABF1FF94' }}></div>
+
             </div>
 
             {/* right */}
@@ -39,8 +44,9 @@ const travaux = () => {
                     </div>
                 </div>
                 {/* Background Circles */}
-                <div className='w-backCircle pinkCircle'></div>
-                <div className='w-backCircle yellowCircle'></div>
+
+                <div className='w-backCircle beigeCircle'></div>
+                <div className='w-backCircle greyCircle'></div>
             </div>
         </div>
     )

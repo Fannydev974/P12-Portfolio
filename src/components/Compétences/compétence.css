@@ -6,6 +6,24 @@
 
 }
 
+.awesome span:nth-child(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.awesome span:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome span {
+    display: flex;
+    font-size: small;
+    flex-direction: row;
+}
+
 /* Right */
 .w-right {
     position: relative;
@@ -20,7 +38,7 @@
     box-shadow: var(--smboxShadow);
     top: 2rem;
     background: white;
-
+    right: 20%;
 }
 
 .w-mainCircle>* {
@@ -63,6 +81,7 @@
     justify-content: center;
     background: "none";
     box-shadow: var(--smboxShadow);
+    /* ombre grise cercle*/
     background: white;
 }
 
@@ -79,14 +98,15 @@
     z-index: -1;
 }
 
-.pinkCircle {
-    background: #FFCCFF;
+.beigeCircle {
+    background: rgba(252, 166, 31, 0.45);
     left: 9rem;
     top: 0rem;
+
 }
 
-.yellowCircle {
-    background: #F5C32C;
+.greyCircle {
+    background: #F0F0F0;
     left: 9rem;
     top: 8rem;
 
@@ -109,6 +129,6 @@
 }
 
 .button {
-    width: 6rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
 }

@@ -1,0 +1,95 @@
+.Portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* Head*/
+
+.Portfolio span:nth-child(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Portfolio span:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Slider */
+
+.Portfolio .swiper {
+    overflow: visible !important;
+}
+
+.Portfolio-slider {
+    margin-top: 3rem;
+    width: 100%;
+
+}
+
+.Portfolio-slider .swiper-slider {
+    width: 20rem;
+}
+
+.Portfolio img {
+    width: 19rem;
+    height: 100%;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0.25));
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    /* Permet d'aligner l'image et la description horizontalement */
+}
+
+.modal img {
+    max-width: 50%;
+    /* Prend 50% de la largeur de la modal */
+    max-height: 80vh;
+    /* Limite la hauteur de l'image pour la fenêtre modale */
+    margin-right: 20px;
+    /* Espacement entre l'image et la description */
+}
+
+.modal p {
+    flex: 1;
+    /* La description prendra tout l'espace restant */
+}
+
+.modal button {
+    margin-top: 10px;
+}
+
+/* images cliquables */
+.Portfolio img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

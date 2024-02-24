@@ -28,8 +28,7 @@ function intro() {
             <div className='i-right'>
                 <img src={ImgPortfolio} alt='image portfolio' />
                 {/*Rond de couleurs de fond */}
-                <div className='fondViolet' style={{ background: "rgb(238 210 255)" }}></div>
-                <div className='fondViolet' style={{ background: '#c1F5FF', top: '41rem', width: '37rem', height: '6rem', left: '10rem' }}></div>
+                <div className='fondGris'></div>
             </div>
         </div>
     )
