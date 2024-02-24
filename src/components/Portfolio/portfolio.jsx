@@ -31,8 +31,7 @@ function Portfolio() {
         <div className='Portfolio'>
 
             {/* Titre */}
-            <div className='fondGris' style={{ background: "#808080" }}></div>
-            <span>Mes Réalisations</span>
+            <span>Mes Projets</span>
             <span>Portfolio</span>
 
             {/* Slider */}

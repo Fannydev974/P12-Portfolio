@@ -28,7 +28,7 @@ function intro() {
             <div className='i-right'>
                 <img src={ImgPortfolio} alt='image portfolio' />
                 {/*Rond de couleurs de fond */}
-                <div className='fondGris'></div>
+                <div className='fondGris' ></div>
             </div>
         </div>
     )

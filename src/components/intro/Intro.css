@@ -5,6 +5,7 @@
 
 }
 
+
 .i-left {
     display: flex;
     position: relative;
@@ -33,7 +34,7 @@
 .i-name>:nth-child(3) {
     color: var(--gray);
     font-weight: 100;
-    font-size: 14px;
+    font-size: 21px;
     margin-top: 10px;
 }
 
@@ -79,7 +80,7 @@
     width: 31rem;
     height: 33rem;
     border-radius: 50%;
-    background: #EDEDED;
+    background: #808080;
     filter: blur(212px);
     z-index: -9;
     top: 18%;
