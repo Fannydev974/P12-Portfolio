@@ -15,7 +15,7 @@ function intro() {
                     <span>Fanny Hadji</span>
                     <span>Développeuse web,
                         Plongez dans l'univers du web avec moi ! En tant que développeuse web front-end junior passionnée, je marie créativité et code pour donner vie à des expériences digitales captivantes. Avec une maîtrise des langages HTML, CSS et JavaScript, React, NexJs je sculpte des interfaces interactives et intuitives qui séduisent et engagent les utilisateurs. Parcourez mon portfolio et laissez-vous emporter par mes projets.
-                        Ensemble, créons un web vibrant et innovant, où chaque clic est une expérience mémorable."</span>
+                        Ensemble, créons un web vibrant et innovant, où chaque clic est une expérience mémorable.</span>
                 </div>
 
                 <button className='button i-button'>Refléchie</button>
