@@ -34,7 +34,7 @@ function Portfolio() {
             <span>Mes Projets</span>
             <span>Portfolio</span>
 
-            {/* Slider */}
+            {/* Slider swiper pour le 'carrousel' d'images */}
             <Swiper
                 spaceBetween={30}
                 slidesPerView={3}

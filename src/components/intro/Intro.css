@@ -50,6 +50,7 @@
 }
 
 .icons>* {
+    /* tous les éléments enfants directs de l'élément avec la classe "icons" */
     transform: scale(0.5);
 }
 
