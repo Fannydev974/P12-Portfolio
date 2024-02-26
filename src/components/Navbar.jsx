@@ -15,12 +15,13 @@ function Navbar() {
                     <ul style={{ listStyleType: 'none' }}> { /* pour enlever les point de liste avant les liens */}
                         <li>A propos</li>
                         <li>Compétences</li>
-                        <li>Mes projets</li>
+                        { /*  <li>Mes projets</li> */}
+                        <button className="button n-button">
+                            Mes projets
+                        </button>
                     </ul>
                 </div>
-                <button className="button n-button">
-                    Contact
-                </button>
+
             </div>
         </div >
     )

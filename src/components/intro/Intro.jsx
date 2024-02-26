@@ -13,12 +13,13 @@ function intro() {
                 <div className='i-name'>
                     <span>Bonjour! Je me présente </span>
                     <span>Fanny Hadji</span>
-                    <span>Développeuse web,
-                        Plongez dans l'univers du web avec moi ! En tant que développeuse web front-end junior passionnée, je marie créativité et code pour donner vie à des expériences digitales captivantes. Avec une maîtrise des langages HTML, CSS et JavaScript, React je sculpte des interfaces interactives et intuitives qui séduisent et engagent les utilisateurs. Parcourez mon portfolio et laissez-vous emporter par mes projets.
-                        Ensemble, créons un web vibrant et innovant, où chaque clic est une expérience mémorable.</span>
+                    <span>
+                        Plongez dans l'univers du web avec moi ! En tant qu'intégratrice, développeuse web et mobile, je marie créativité et code pour donner vie à des expériences digitales captivantes. Avec une maîtrise des langages HTML, CSS, JavaScript et React je sculpte des interfaces interactives et intuitives qui séduisent et engagent les utilisateurs. En parcourant mon portfolio vous pourrez ainsi voir les projets que j'ai pu réaliser tout au long de ma formation intensive avec Openclassrooms, ce qui vous donnera un aperçu des compétences et du savoir que j'ai pu acquérir durant celle-ci.<br></br>
+                        N'hésitez pas à prendre contact avec moi je serais ravie d'échanger avec vous !
+                    </span>
                 </div>
 
-                <button className='button i-button'>Refléchie</button>
+                <button className='button i-button'>Contact</button>
                 <div className='icons'>
                     <img src={Github} alt='icon github' />
                     <img src={Linkedin} alt='icon linkedin' />

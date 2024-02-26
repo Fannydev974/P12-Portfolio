@@ -42,7 +42,15 @@ function Portfolio() {
                 className='Portfolio-slider'
             >
                 <SwiperSlide>
-                    <img src={Booki} alt='Photo du site Booki' onClick={() => openModal(Booki, "Description de l'image Booki")} />
+                    <img src={Booki} alt='Photo du site Booki' onClick={() => openModal(Booki, (
+                        <p>
+                            <strong>Contexte du projet Booki :</strong>
+                            L'Entreprise souhaite développer un site web pour la recherche d'hébergements et d'activités.
+                            <br></br><strong>Présentation :</strong> Booki est un projet web qui vise à simplifier la recherche d'hébergements et d'activités dans la ville de choix de l'utilisateur. Mon rôle en tant que développeuse Front-End était de prendre les maquettes fournies par l'UI designer, et de les intégrer en utilisant HTML et CSS.
+
+                            <strong>Objectifs :</strong> Le défi pour cette mission était de rendre le projet responsif. Pour cela j'ai utilisé flexbox, cela a permis de pouvoir créer une expérience maximale pour les utilisateurs ainsi qu'une mise en page qui s'adapte à toutes sortes de taille d'écran différents (mobile, tablette, ordianteur).
+                        </p>
+                    ))} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={Ohmyfood} alt='Photo du site Ohmyfood' onClick={() => openModal(Ohmyfood, "Description de l'image Ohmyfood")} />
@@ -67,7 +75,7 @@ function Portfolio() {
                     <div className="modal" onClick={(event) => event.stopPropagation()}>
                         <img src={selectedImage} alt="Image" />
                         <p>{selectedDescription}</p>
-                        <button onClick={closeModal}>Fermer</button>
+                        <button className="close-button" onClick={closeModal}>X</button>
                     </div>
                 </div>
             )}

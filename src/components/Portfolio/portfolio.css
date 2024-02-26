@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .modal {
@@ -65,12 +66,15 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
     /* Permet d'aligner l'image et la description horizontalement */
+    height: 50%;
+    width: 80%;
+    flex-direction: column;
 }
 
 .modal img {
-    max-width: 50%;
+    width: 45%;
     /* Prend 50% de la largeur de la modal */
-    max-height: 80vh;
+    max-height: 20vh;
     /* Limite la hauteur de l'image pour la fenêtre modale */
     margin-right: 20px;
     /* Espacement entre l'image et la description */
@@ -79,11 +83,37 @@
 .modal p {
     flex: 1;
     /* La description prendra tout l'espace restant */
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 500;
+    gap: 8px;
+}
+
+.modal strong {
+    font-weight: bold;
+    color: var(--orange);
 }
 
 .modal button {
     margin-top: 10px;
+    width: 30px;
+    height: 30px;
 }
+
+.close-button {
+    position: absolute;
+    right: 150px;
+    background: #F0F0F0;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--orange);
+}
+
+
 
 /* images cliquables */
 .Portfolio img {
