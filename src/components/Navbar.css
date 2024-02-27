@@ -39,3 +39,52 @@
     cursor: pointer;
     color: var(--orange);
 }
+
+/********** media **************/
+
+/* Pour les écrans jusqu'à la taille de la tablette */
+@media only screen and (max-width: 768px) {
+    .n-wrapper {
+        flex-direction: column;
+        /* Afficher les éléments en colonne sur les écrans plus petits */
+    }
+
+    .n-left,
+    .n-right {
+        flex: none;
+        /* Annuler la flexibilité pour permettre aux éléments de conserver leur taille */
+        width: 100%;
+        /* Prendre toute la largeur de l'écran */
+        margin-bottom: 1rem;
+        /* Ajouter de l'espace entre les éléments */
+        text-align: center;
+        /* Centrer le texte */
+    }
+
+    .n-list>ul {
+        margin-right: 0;
+        /* Réinitialiser la marge à zéro */
+        justify-content: center;
+        /* Centrer les éléments de la liste */
+    }
+}
+
+/* Pour les écrans jusqu'à la taille du mobile */
+@media only screen and (max-width: 480px) {
+    .n-name {
+        font-size: 1rem;
+        /* Réduire la taille de la police */
+    }
+
+    .n-list>ul {
+        flex-direction: column;
+        /* Afficher les éléments de la liste en colonne */
+        gap: 1rem;
+        /* Ajouter de l'espace entre les éléments */
+    }
+
+    .n-list>ul>li {
+        font-size: 0.9rem;
+        /* Réduire la taille de la police */
+    }
+}

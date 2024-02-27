@@ -30,7 +30,7 @@
 }
 
 .w-mainCircle {
-
+    margin-top: 80px;
     position: relative;
     width: 18rem;
     height: 18rem;
@@ -101,14 +101,14 @@
 .beigeCircle {
     background: rgba(252, 166, 31, 0.45);
     left: 9rem;
-    top: 0rem;
+    top: 80px;
 
 }
 
 .greyCircle {
     background: #F0F0F0;
     left: 9rem;
-    top: 8rem;
+    top: 14rem;
 
 }
 
@@ -133,4 +133,114 @@
     height: 3rem;
     font-size: medium;
     color: white;
+}
+
+
+/****** Media *********/
+/* Pour les écrans jusqu'à la taille de la tablette */
+@media only screen and (min-width: 768px),
+(max-width: 1024px) {
+    .works {
+        padding: 0 2rem;
+    }
+
+    .awesome span:nth-child(1) {
+        font-size: 1.8rem;
+    }
+
+    .awesome span:nth-child(2) {
+        font-size: 2.2rem;
+    }
+
+    .w-mainCircle {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .w-secCircle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .w-backCircle {
+        height: 11rem;
+        width: 11rem;
+    }
+}
+
+
+/* Pour les écrans jusqu'à la taille de la tablette */
+@media only screen and (max-width: 768px) {
+    .works {
+        flex-direction: column;
+        height: auto;
+        margin-top: 3rem;
+        padding: 0 1rem;
+    }
+
+    .awesome {
+        text-align: center;
+    }
+
+    .awesome span:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .awesome span:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .awesome span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .w-right {
+        text-align: center;
+    }
+
+    .w-mainCircle {
+        margin-top: 1rem;
+        width: 12rem;
+        height: 12rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .w-secCircle {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+
+    .w-backCircle {
+        height: 9rem;
+        width: 9rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .beigeCircle,
+    .greyCircle {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Pour les écrans jusqu'à la taille du mobile */
+@media only screen and (max-width: 480px) {
+
+    .awesome span:nth-child(1),
+    .awesome span:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .awesome span {
+        margin-top: 1rem;
+    }
+
+    .w-secCircle {
+        margin-top: 1.5rem;
+    }
 }

@@ -9,6 +9,7 @@ import ImgPortfolio from '../../img/img portfolio.jpg';
 function intro() {
     return (
         <div className='intro'>
+
             <div className='i-left'>
                 <div className='i-name'>
                     <span>Bonjour! Je me présente </span>
@@ -31,7 +32,7 @@ function intro() {
                 {/*Rond de couleurs de fond */}
                 <div className='fondGris' ></div>
             </div>
-        </div>
+        </div >
     )
 }
 

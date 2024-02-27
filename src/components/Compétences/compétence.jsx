@@ -16,6 +16,7 @@ const travaux = () => {
                 <span>▸ Référencement SEO,</span>
                 <span> ▸ Méthode agile,</span>
                 <span>▸ Accessibilité</span>
+                <span>▸ Résolution de bug</span>
                 <span>---------------------------</span>
                 <span>▸ Rigueur ▸ Autonomie ▸ Adaptibilité ▸ Curiosité</span>
 
