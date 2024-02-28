@@ -137,110 +137,38 @@
 
 
 /****** Media *********/
-/* Pour les écrans jusqu'à la taille de la tablette */
-@media only screen and (min-width: 768px),
-(max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+
+    /* Styles for screens up to 1024px wide */
     .works {
-        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .awesome span:nth-child(1) {
-        font-size: 1.8rem;
+    .w-right {
+        display: none;
     }
 
-    .awesome span:nth-child(2) {
-        font-size: 2.2rem;
-    }
-
-    .w-mainCircle {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .w-secCircle {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .w-backCircle {
-        height: 11rem;
-        width: 11rem;
-    }
 }
 
-
-/* Pour les écrans jusqu'à la taille de la tablette */
 @media only screen and (max-width: 768px) {
-    .works {
-        flex-direction: column;
-        height: auto;
-        margin-top: 3rem;
-        padding: 0 1rem;
-    }
 
+    /* Styles for screens up to 768px wide */
     .awesome {
-        text-align: center;
-    }
-
-    .awesome span:nth-child(1) {
-        font-size: 1.5rem;
-    }
-
-    .awesome span:nth-child(2) {
-        font-size: 2rem;
-    }
-
-    .awesome span {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .w-right {
-        text-align: center;
-    }
-
-    .w-mainCircle {
-        margin-top: 1rem;
-        width: 12rem;
-        height: 12rem;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .w-secCircle {
-        width: 4rem;
-        height: 4rem;
-        margin-top: 2rem;
-    }
-
-    .w-backCircle {
-        height: 9rem;
-        width: 9rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .beigeCircle,
-    .greyCircle {
-        left: 50%;
-        transform: translateX(-50%);
+    .button.s-button {
+        margin-top: 20px;
     }
 }
 
-/* Pour les écrans jusqu'à la taille du mobile */
 @media only screen and (max-width: 480px) {
 
-    .awesome span:nth-child(1),
-    .awesome span:nth-child(2) {
-        font-size: 1.2rem;
-    }
-
-    .awesome span {
-        margin-top: 1rem;
-    }
-
-    .w-secCircle {
-        margin-top: 1.5rem;
+    /* Styles for screens up to 480px wide */
+    .awesome {
+        font-size: 14px;
     }
 }

@@ -81,7 +81,7 @@
 }
 
 .modal p {
-    width: 290%;
+
     flex: 1;
     /* La description prendra tout l'espace restant */
     font-size: large;
@@ -143,84 +143,96 @@
 
 /* Style des boutons */
 .button-container button {
-    width: 15%;
+    width: 108px;
     height: 55px;
     border-radius: 10px;
     color: var(--orange);
     position: relative;
-    left: 49%;
+    right: 450px;
     bottom: 95px;
 }
 
 .button-container span {
     display: flex;
     border: 1px solid black;
-    width: 10%;
     height: 50px;
     align-items: center;
     border-radius: 56%;
     justify-content: center;
     color: var(--orange);
     font-size: larger;
-    width: 110px;
+    width: 190px;
     position: relative;
     top: 21px;
 }
 
 
 /*******media*******/
-/* Portfolio */
-.Portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
+@media only screen and (max-width: 768px) {
+    .modal {
+        height: 800px;
+    }
+
+    .modal p {
+        width: 55%;
+    }
+
+    .modal button {
+        right: 87px;
+    }
+
+    .button-container button {
+        width: 30%;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .button-container span {
+        width: 30%;
+        top: 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        top: -20%;
+    }
+
+    .button-container button,
+    .button-container span {
+        width: 130%;
+        margin-bottom: 10px;
+    }
 }
 
-/* Head */
-.Portfolio span:nth-child(1) {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-}
 
-.Portfolio span:nth-child(2) {
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+@media only screen and (max-width: 480px) {
+    .modal {
+        height: 800px;
+    }
 
-/* Slider */
-.Portfolio-slider {
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .modal p {
+        width: 82%;
+    }
 
-.Portfolio-slider .swiper-slide {
-    flex: 0 0 30%;
-    /* 30% de largeur pour chaque slide */
-    margin: 1rem;
-    /* Espacement entre les slides */
-}
+    .modal img {
+        max-height: 15vh;
+    }
 
-.Portfolio img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
+    .button-container {
+        top: -23%;
+        right: 10px;
+    }
 
-/* Button container */
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 10px;
+    .button-container button {
+        width: 130%;
+    }
+
+    .button-container span {
+        width: 117%;
+    }
+
+    .modal button {
+        right: 48px;
+    }
 }
