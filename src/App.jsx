@@ -5,6 +5,7 @@ import Compétences from './components/Compétences/compétence';
 import Portfolio from './components/Portfolio/portfolio';
 import Footer from './components/Footer/footer.jsx';
 
+
 function App() {
   return (
 

@@ -1,4 +1,4 @@
-.Portfolio {
+#mes-projets .Portfolio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,6 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    /* Permet d'aligner l'image et la description horizontalement */
     height: 50%;
     width: 80%;
     flex-direction: column;
@@ -73,17 +72,13 @@
 
 .modal img {
     width: 45%;
-    /* Prend 50% de la largeur de la modal */
     max-height: 20vh;
-    /* Limite la hauteur de l'image pour la fenêtre modale */
     margin-right: 20px;
-    /* Espacement entre l'image et la description */
 }
 
 .modal p {
 
     flex: 1;
-    /* La description prendra tout l'espace restant */
     font-size: large;
     display: flex;
     flex-direction: column;
@@ -103,6 +98,20 @@
     width: 30px;
     height: 30px;
 }
+
+.modal .lienGithub {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 225px;
+    right: 350px;
+    width: 76px;
+    height: 50px;
+    border-radius: 7px;
+    color: var(--orange);
+}
+
+
 
 .close-button {
     position: absolute;
@@ -149,7 +158,7 @@
     color: var(--orange);
     position: relative;
     right: 450px;
-    bottom: 95px;
+    bottom: 33px;
 }
 
 .button-container span {
@@ -170,11 +179,11 @@
 /*******media*******/
 @media only screen and (max-width: 768px) {
     .modal {
-        height: 800px;
+        height: 525px;
     }
 
     .modal p {
-        width: 55%;
+        width: 100%;
     }
 
     .modal button {
@@ -203,16 +212,21 @@
         width: 130%;
         margin-bottom: 10px;
     }
+
+    .modal .lienGithub {
+        bottom: 211px;
+        right: 150px;
+    }
 }
 
 
 @media only screen and (max-width: 480px) {
     .modal {
-        height: 800px;
+        height: 665px;
     }
 
     .modal p {
-        width: 82%;
+        width: 100%;
     }
 
     .modal img {
@@ -234,5 +248,19 @@
 
     .modal button {
         right: 48px;
+    }
+
+    .modal .lienGithub {
+        bottom: 291px;
+        right: 80px;
+        font-size: revert;
+        width: 48px;
+        height: 40px;
+    }
+
+    .modal-content {
+        font-size: xx-small;
+        height: 96%;
+        width: 115%;
     }
 }

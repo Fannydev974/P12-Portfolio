@@ -1,4 +1,4 @@
-.works {
+#competences .works {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 60vh;
@@ -112,10 +112,6 @@
 
 }
 
-
-
-
-
 .awesome {
     display: flex;
     position: relative;
@@ -139,7 +135,6 @@
 /****** Media *********/
 @media only screen and (max-width: 1024px) {
 
-    /* Styles for screens up to 1024px wide */
     .works {
         display: flex;
         flex-direction: column;
@@ -153,7 +148,10 @@
 
 @media only screen and (max-width: 768px) {
 
-    /* Styles for screens up to 768px wide */
+    #competences .works {
+        margin-top: 25rem;
+    }
+
     .awesome {
         display: flex;
         flex-direction: column;
@@ -167,7 +165,6 @@
 
 @media only screen and (max-width: 480px) {
 
-    /* Styles for screens up to 480px wide */
     .awesome {
         font-size: 14px;
     }
