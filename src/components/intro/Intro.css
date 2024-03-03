@@ -172,7 +172,7 @@ h2 {
     display: flex;
     width: 42px;
     position: relative;
-    bottom: 100%;
+    bottom: 73%;
     left: 90%;
 }
 
@@ -219,6 +219,10 @@ h2 {
         height: 45%;
         width: 45%;
     }
+
+    .contactClose {
+        bottom: 96%;
+    }
 }
 
 
@@ -251,6 +255,11 @@ h2 {
     }
 
     .modalContact {
-        width: 75%
+        width: 88%;
+        height: 67%;
+    }
+
+    .contactClose {
+        bottom: 65%;
     }
 }

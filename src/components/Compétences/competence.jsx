@@ -7,7 +7,7 @@ import IconReact from '../../img/icon React.png';
 import Sass from '../../img/icon sass.png';
 
 
-const travaux = () => {
+const Competences = () => {
 
     {/* const DownloadCV = () => {
         // pour le téléchargement du CV
@@ -66,4 +66,4 @@ const travaux = () => {
     )
 }
 
-export default travaux
+export default Competences

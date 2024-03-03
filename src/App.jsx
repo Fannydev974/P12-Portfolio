@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar';
 import Intro from './components/intro/Intro';
-import Compétences from './components/Compétences/compétence';
+import Competences from './components/Competences/competence.jsx';
 import Portfolio from './components/Portfolio/portfolio';
 import Footer from './components/Footer/footer.jsx';
 
@@ -12,7 +12,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <Intro />
-      <Compétences />
+      <Competences />
       <Portfolio />
       <Footer />
     </div>

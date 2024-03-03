@@ -34,7 +34,7 @@ function Portfolio() {
     // Définition du composant ModalContent
     function ModalContent({ description, githubLink }) {
         const handleGithubClick = () => {
-            window.open(githubLink, '_blank');
+            window.open(githubLink, '_blank'); // '_blank' signifie ouvert dans un nouvel onglet
         };
         return (
             <div className="modal-content">

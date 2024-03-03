@@ -25,7 +25,7 @@ function Intro() {
                         </span>
                     </div>
 
-                    <button onClick={toggleContacts} className='button i-button'>Mes contacts</button>
+                    <button onClick={toggleContacts} className='button i-button'>Contacts</button>
                     {showContacts && (
                         <div className="modal-overlay">
                             <div className="modalContact">
