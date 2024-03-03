@@ -1,5 +1,5 @@
 import React from 'react'
-import './compétence.css';
+import './competence.css';
 import Html from '../../img/Html.png';
 import Css from '../../img/Css.png';
 import JavaScript from '../../img/icon JS.png';
