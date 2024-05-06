@@ -1,11 +1,13 @@
 import React from 'react'
 import './competence.css';
-import Html from '../../img/Html.png';
-import Css from '../../img/Css.png';
-import JavaScript from '../../img/icon JS.png';
-import IconReact from '../../img/icon React.png';
-import Sass from '../../img/icon sass.png';
-
+import Html from '../../img/icons/html-icon.png';
+import Css from '../../img/icons/css-icon.png';
+import JavaScript from '../../img/icons/js-icon.png';
+import IconReact from '../../img/icons/react-icon.png';
+import Sass from '../../img/icons/sass-icon.png';
+import Redux from '../../img/icons/redux-icon.png';
+import Swagger from '../../img/icons/swagger-icon.png';
+import Github from '../../img/icons/github-icon.png';
 
 const Competences = () => {
 
@@ -37,33 +39,45 @@ const Competences = () => {
 
                 </div>
 
+
                 {/* right */}
-                <div className='w-right'>
-                    <div className='w-mainCircle'>
-                        <div className='w-secCircle'>
+                <div id='competenceIcons'>
+                    <div className='containerIcons'>
+                        <div className='contentIcon'>
                             <img src={Html} alt='' />
                         </div>
-                        <div className='w-secCircle'>
+                        <div className='contentIcon'>
                             <img src={Css} alt='' />
                         </div>
-                        <div className='w-secCircle'>
+                        <div className='contentIcon'>
                             <img src={JavaScript} alt='' />
                         </div>{""}
-                        <div className='w-secCircle'>
+                        <div className='contentIcon'>
                             <img src={IconReact} alt='' />
                         </div>
-                        <div className='w-secCircle'>
+                        <div className='contentIcon'>
                             <img src={Sass} alt='' />
                         </div>
-                    </div>
-                    {/* Background Circles */}
 
-                    <div className='w-backCircle beigeCircle'></div>
-                    <div className='w-backCircle greyCircle'></div>
+                        <div className='contentIcon'>
+                            <img src={Redux} alt='' />
+                        </div>
+                        <div className='contentIcon'>
+                            <img src={Swagger} alt='' />
+                        </div>
+                        <div className='contentIcon'>
+                            <img src={Github} alt='' />
+                        </div>
+                        {/* Background Circles */}
+
+                        <div className='w-backCircle beigeCircle'></div>
+                        <div className='w-backCircle greyCircle'></div>
+                    </div>
                 </div>
-            </div>
+            </div >
         </div>
     )
 }
+
 
 export default Competences

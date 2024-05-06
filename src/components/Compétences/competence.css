@@ -24,53 +24,81 @@
     flex-direction: row;
 }
 
+.awesome {
+    font-size: x-large;
+}
+
+
 /* Right */
 .w-right {
     position: relative;
 }
 
-.w-mainCircle {
+#competenceIcons {
+    width: 60%;
+}
+
+.containerIcons {
     margin-top: 80px;
     position: relative;
-    width: 18rem;
-    height: 18rem;
+    width: 23rem;
+    height: 22rem;
     border-radius: 100%;
     box-shadow: var(--smboxShadow);
     top: 2rem;
     background: white;
-    right: 20%;
+    right: -38%;
 }
 
-.w-mainCircle>* {
-    position: absolute;
+.containerIcons>* {
+    transition: all 0.3s ease;
+    font-size: 40px;
+    /*position: absolute;*/
+    transition: all 0.8s ease;
 }
 
-.w-mainCircle>:nth-child(1) {
+.containerIcons>:nth-child(1) {
     top: -3rem;
-    left: 6rem;
+    left: 11rem;
+
 }
 
-.w-mainCircle>:nth-child(2) {
+.containerIcons>:nth-child(2) {
     left: -3rem;
-    top: 5rem;
+    top: 11rem;
 }
 
-.w-mainCircle>:nth-child(3) {
-    left: 6rem;
-    top: 5rem;
+.containerIcons>:nth-child(3) {
+    left: -2rem;
+    top: 3rem;
 }
 
-.w-mainCircle>:nth-child(4) {
-    left: 15rem;
-    top: 5rem;
+.containerIcons>:nth-child(4) {
+    left: 18rem;
+    top: 3rem;
 }
 
-.w-mainCircle>:nth-child(5) {
-    left: 6rem;
-    top: 13rem;
+.containerIcons>:nth-child(5) {
+    left: 18rem;
+    top: 11rem;
 }
 
-.w-secCircle {
+.containerIcons>:nth-child(6) {
+    left: 4rem;
+    top: 18rem;
+}
+
+.containerIcons>:nth-child(7) {
+    left: 4rem;
+    top: -3rem;
+}
+
+.containerIcons>:nth-child(8) {
+    left: 11rem;
+    top: 18rem;
+}
+
+.contentIcon {
     width: 6rem;
     height: 6rem;
     position: absolute;
@@ -79,14 +107,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: "none";
     box-shadow: var(--smboxShadow);
     /* ombre grise cercle*/
-    background: white;
+    /*background: white;*/
 }
 
-.w-secCircle>img {
-    transform: scale(0.6);
+.contentIcon>img {
+    transform: scale(0.1);
+
+}
+
+.contentIcon :hover {
+
+    transition: all 0.8s ease;
+    transform: scale(0.5) rotate(360deg);
 
 }
 
@@ -100,15 +134,15 @@
 
 .beigeCircle {
     background: rgba(252, 166, 31, 0.45);
-    left: 9rem;
-    top: 80px;
+    left: 14rem;
+    top: -38px;
 
 }
 
 .greyCircle {
     background: #F0F0F0;
-    left: 9rem;
-    top: 14rem;
+    left: 14rem;
+    top: 8rem;
 
 }
 

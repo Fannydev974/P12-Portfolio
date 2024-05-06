@@ -1,9 +1,11 @@
 import React from 'react'
 import './Navbar.css'
-
+import { useContext } from 'react';
+//import { LanguageContext } from '../Pages/homepage';
 
 
 function Navbar() {
+    /*const { language } = useContext(LanguageContext);*/
     return (
         <div className='n-wrapper'>
             <div className='n-left'>

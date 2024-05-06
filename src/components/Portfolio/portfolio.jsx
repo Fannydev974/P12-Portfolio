@@ -3,13 +3,14 @@ import './portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import Booki from '../../img/Booki.png';
-import Ohmyfood from '../../img/Ohmyfood.png';
-import SophieBluel from '../../img/SophieBluel.png';
-import Qwenta from '../../img/Qwenta.png';
-import Kasa from '../../img/Kasa.png';
-import NinaCarducci from '../../img/NinaCarducci.png';
+import Booki from '../../img/booki.png';
+import Ohmyfood from '../../img/ohmyfood.png';
+import SophieBluel from '../../img/sophiebluel.png';
+import ArgentBank from '../../img/argentbank.png';
+import Kasa from '../../img/kasa.png';
+import NinaCarducci from '../../img/ninacarducci.png';
 import Events from '../../img/724events.png';
+import Printit from '../../img/printit.png'
 
 function Portfolio() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -84,6 +85,20 @@ function Portfolio() {
                         ), 'https://github.com/Fannydev974/projetohmyfood')} />
                     </SwiperSlide>
                     <SwiperSlide>
+                        <img src={Printit} alt='Photo du site Print-it' onClick={() => openModal(Printit, (
+                            <p>
+                                <strong>Client :</strong>
+                                Print-it imprimerie familiale
+                                <br></br>
+                                <strong>Présentation :</strong>
+                                dynamiser le site Internet statique d’une petite imprimerie familiale nommée Print it.
+                                <strong>Objectif :</strong>
+                                dynamiser le site Internet statique d’une petite imprimerie familiale, en ajoutant a celui-ci un carrousel d'images qui défile avec des images chisies à l'avance par le gérant de cette imprimerie.
+                                <strong>Pour cela j'ai utilisée: "JavaScript", "DOM".</strong>
+                            </p>
+                        ), 'https://github.com/Fannydev974/Print-it')} />
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <img src={SophieBluel} alt='Photo du site Sophie Bluel' onClick={() => openModal(SophieBluel, (
                             <p>
                                 <strong>Client :</strong>
@@ -98,21 +113,19 @@ function Portfolio() {
                         ), 'https://github.com/Fannydev974/P06-Sophie-Bluel')} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={Qwenta} alt='Photo du site Qwenta' onClick={() => openModal(Qwenta, (
+                        <img src={ArgentBank} alt='Photo du site ArgentBank' onClick={() => openModal(ArgentBank, (
                             <p>
                                 <strong>Client :</strong>
-                                Qwenta, il s'agit d'une application de création de menu pour restaurateurs.
+                                ArgentBank, Nouveau sur le marché des banque en ligne
                                 <br></br>
                                 <strong>Présentation :</strong>
-                                Dans l'Agence Webgencia, ma mission pour ce projet est d'étudier la demande d'un client pour le développement d'une application web permettant aux restaurateurs de créer facilement leurs menus.
+                                ArgentBank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire.
                                 <strong>Objectif :</strong>
-                                Veille technologique pour rester informé des dernières tendances et technologies en développement web pertinentes au projet.
-                                Définition des spécifications techniques en fonction de l'aspect visuel du site et des fonctionnalités requises.
-                                Rédaction d'un rapport et création d'une présentation visuelle pour présenter les spécifications au client.
-                                Utilisation d'un tableau Kanban pour organiser la gestion de projet suivant les méthodologies agiles.
-                                <strong>Pour cela j'ai utilisée: "Kanban", "Feedly", "Notion".</strong>
+                                Créer l’application web complète et responsive avec React.Responsable de la configuration du tableau de bord utilisateur pour notre nouvelle application web React chez ArgentBank.
+                                Collaboration avec Mila, la cheffe de projet, pour répondre aux exigences fixées par Avery et terminer les tâches dans les délais impartis.
+                                <strong>Pour cela j'ai utilisée: "React", "Redux", "Green Code", "MongoDB".</strong>
                             </p>
-                        ),)} />
+                        ), 'https://github.com/Fannydev974/P11-ArgentBank')} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={Kasa} alt='Photo du site Kasa' onClick={() => openModal(Kasa, (
