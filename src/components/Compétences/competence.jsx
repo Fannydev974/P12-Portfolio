@@ -20,16 +20,24 @@ const Competences = () => {
 
     return (
         <div id="competences">
+            <div className='title_competences'>
+                <span>Mes Compétences</span>
+            </div>
             <div className='works'>
                 <div className='awesome'>
-                    <span>Mes </span>
-                    <span>Compétences</span>
-                    <span>▸ Référencement SEO,</span>
-                    <span> ▸ Méthode agile,</span>
-                    <span>▸ Accessibilité</span>
-                    <span>▸ Résolution de bug</span>
-                    <span>---------------------------</span>
-                    <span>▸ Rigueur ▸ Autonomie ▸ Adaptibilité ▸ Curiosité</span>
+
+                    <div className='title_domaines'><span>DOMAINES DE COMPETENCES</span></div>
+                    <span> ▸GESTION DE PROJETS WEB <br></br>
+                        Site vitrine, évènementiels, e-commerce, application web et mobile.</span>
+                    <span>▸INTEGRATION <br></br>
+                        Codage à la main tout en respectant les standars du web</span>
+                    <span>▸REFERENCEMENT NATUREL SEO <br></br>
+                        Accessibilité & ergonomie des pages web.</span>
+                    <span>▸ CONCEPTION MULTI-PLATEFORMES <br></br>
+                        Compatible tous supports, tablettes & mobile.
+                    </span>
+
+
 
                     {/* <a> pour le téléchargement du CV 
                     <a href="" download="mon cv" className='button s-button' onClick={DownloadCV}>
@@ -41,7 +49,10 @@ const Competences = () => {
 
 
                 {/* right */}
+
                 <div id='competenceIcons'>
+                    <div className='title_icons'><span>Compétences</span>
+                        <span>en développement</span></div>
                     <div className='containerIcons'>
                         <div className='contentIcon'>
                             <img src={Html} alt='' />

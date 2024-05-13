@@ -1,12 +1,43 @@
+#competences {
+    position: relative;
+    top: 338px;
+}
+
 #competences .works {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 60vh;
     margin-top: 4rem;
-
+    width: 100%;
 }
 
-.awesome span:nth-child(1) {
+.title_competences {
+    display: flex;
+    justify-content: center;
+    color: var(--orange);
+}
+
+.title_competences span {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+
+/*#competences {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#competences span:nth-child(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}*/
+
+
+/*.awesome span:nth-child(2) {
     color: var(--black);
     font-size: 2rem;
     font-weight: bold;
@@ -16,7 +47,7 @@
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
-}
+}*/
 
 .awesome span {
     display: flex;
@@ -26,6 +57,13 @@
 
 .awesome {
     font-size: x-large;
+}
+
+.title_domaines span {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 
@@ -38,8 +76,21 @@
     width: 60%;
 }
 
+.title_icons span {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#competenceIcons span {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
 .containerIcons {
-    margin-top: 80px;
+    margin-top: 77px;
     position: relative;
     width: 23rem;
     height: 22rem;
@@ -47,7 +98,7 @@
     box-shadow: var(--smboxShadow);
     top: 2rem;
     background: white;
-    right: -38%;
+    right: -27%;
 }
 
 .containerIcons>* {
