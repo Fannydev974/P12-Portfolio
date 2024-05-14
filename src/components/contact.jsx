@@ -1,4 +1,58 @@
-import React from 'react';
+import React from 'react'
+import ProfileIcon from '../img/icons/profile_icon.png';
+import PhoneIcon from '../img/icons/phone_icon.png';
+import MailIcon from '../img/icons/email_icon.png';
+import './contact.css';
+function contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+
+        const formData = new FormData(form);
+
+        const username = formData.get("username");
+        const email = formData.get("email");
+        const message = formData.get("message");
+        form.reset();
+
+        alert('Username: ${username} Email: ${email}');
+    };
+
+    return (
+        <div id='Contact'>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor='"username'>Nom</label>
+                <input name="username" type='text' id='username' />
+                <label htmlFor='email'>Email</label>
+                <input name='email' type='email' id='email' />
+                <label htmlFor='message'>Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+                <button type='submit'>Envoyer</button>
+            </form>
+
+            <div className="contact-infos">
+                <div className="contact-infos-name">
+                    <img src={ProfileIcon} className="contact-infos-icon" alt="Profile Icon" />
+                    <p className="contact-infos-text">Fanny Hadji</p>
+                </div>
+                <div className="contact-infos-number">
+                    <img src={PhoneIcon} className="contact-infos-icon" />
+                    <a href="tel:0766360280" aria-label="Lien vers le numéro de téléphone" className="contact-infos-text">0766360280</a>
+                </div>
+                <div className="contact-infos-mail">
+                    <img src={MailIcon} className="contact-infos-icon" />
+                    <a href="devfanny91@outlook.com" aria-label="Lien vers l'adresse e-mail" className="contact-infos-text">devfanny91@outlook.com</a>
+                </div>
+            </div>
+        </div>
+    )
+};
+
+export default contact;
+
+
+/*import React from 'react';
 import ProfileIcon from '../img/icons/profile_icon.png';
 import PhoneIcon from '../img/icons/phone_icon.png';
 import MailIcon from '../img/icons/email_icon.png';
@@ -61,3 +115,4 @@ function Contact() {
 }
 
 export default Contact;
+*/

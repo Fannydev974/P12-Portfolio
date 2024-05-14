@@ -1,136 +1,42 @@
-/********Contact*******/
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+#Contact {
+    background-color: rgba(97, 95, 99, 0.051);
+    /*border: 2px solid black;*/
+    padding: 20px 20px 50px 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-
-.modal ul {
-    list-style: none;
-    padding: 0;
-    width: 180px;
-}
-
-.modal ul li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.contactClose {
-    background-color: #F0F0F0;
-    color: var(--orange);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    width: 80px;
-    cursor: pointer;
-}
-
-.modalContact {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    height: 60%;
-    width: 40%;
-    flex-direction: column;
-}
-
-.modalContact ul li {
-    width: 300px;
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-}
-
-.modalContact ul {
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.contactClose {
-    display: flex;
-    width: 42px;
+    justify-content: space-around;
     position: relative;
-    bottom: 73%;
-    left: 90%;
+    bottom: 115px;
 }
 
-
-#contact {
-    background-color: rgba(67, 13, 108, 0.0509803922);
-    ;
-    padding: 20px 20px 50px 20px
-}
-
-.form_infos-container {
+#Contact form {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 45px 20px 20px 20px;
+    width: 45%;
+    padding: 45px;
+    gap: 5px;
 }
 
-.contact-title {
-    color: black;
-    font-size: 25px;
-    margin-left: 20px;
-    transition: all 0.3s ease;
+#Contact input {
+    width: 100%;
+    height: 35px;
+    border: inherit;
+    border-radius: 20px;
 }
 
-.contact-title:hover {
-    transition: all 0.3s ease;
-    font-size: 40px;
+textarea {
     color: #FCA61F;
 }
 
-section.contact_form {
-    display: none;
-    width: 470px;
-}
+#Contact button {
+    border-radius: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 209px;
+    top: 25px;
 
-.contact_form-content-container {
-    color: black;
-    font-size: 30px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.contact_form-content-container-input input,
-.contact_form-content-container-input textarea {
-    border-radius: 10px;
-    padding: 8px;
-    padding-bottom: 7px;
-}
-
-.contact_form-content-container-input.text {
-    padding-top: 10px;
 }
 
 .contact-infos {
@@ -138,24 +44,27 @@ section.contact_form {
     flex-direction: column;
     align-items: start;
     gap: 30px;
+    border: 2px solid black;
+    width: 277px;
+    position: relative;
+}
 
-    .contact-infos name {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
+.contact-infos name {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
-    .contact-infos number {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
+.contact-infos number {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
-    .contact-infos mail {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
+.contact-infos mail {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .contact-infos-icon {
@@ -180,30 +89,4 @@ section.contact_form {
     transition: all 0.3s ease;
     color: #FCA61F;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.contact_form-content-container-input input::placeholder,
-.contact_form-content-container-input textarea::placeholder {
-    color: #FCA61F;
-    font-size: 18px;
-    background-color: white;
-}
-
-.contact_form-content-container-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border: none;
-    padding: 8px;
-    font-size: 18px;
-    border-radius: 12px;
-    margin: 0 0 0 auto;
-    cursor: pointer;
-}
-
-label {
-    position: absolute;
-    left: -9999px;
 }
