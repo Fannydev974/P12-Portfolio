@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,20 +10,23 @@ import ArgentBank from '../../img/argentbank.png';
 import Kasa from '../../img/kasa.png';
 import NinaCarducci from '../../img/ninacarducci.png';
 import Events from '../../img/724events.png';
-import Printit from '../../img/printit.png'
+import Printit from '../../img/printit.png';
+import ArrowLeft from '../../img/arrowLeft.jpg';
+import ArrowRight from '../../img/arrowRight.jpg'
 
 function Portfolio() {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedDescription, setSelectedDescription] = useState('');
     const [selectedGithubLink, setSelectedGithubLink] = useState('');
-
+    const [showLeftArrow, setShowLeftArrow] = useState(false);
+    const [showRightArrow, setShowRightArrow] = useState(true);
+    const swiperRef = useRef(null);
 
     const openModal = (image, description, githubLink) => {
         setSelectedImage(image);
         setSelectedDescription(description);
         setSelectedGithubLink(githubLink);
-
         setModalOpen(true);
     };
 
@@ -32,6 +35,16 @@ function Portfolio() {
         setSelectedDescription('');
         setModalOpen(false);
     };
+
+    const handleSlideChange = (swiper) => {
+        const isBeginning = swiper.isBeginning;
+        const isEnd = swiper.isEnd;
+
+        setShowLeftArrow(!isBeginning);
+        setShowRightArrow(!isEnd);
+    };
+
+
     // Définition du composant ModalContent
     function ModalContent({ description, githubLink }) {
         const handleGithubClick = () => {
@@ -40,7 +53,7 @@ function Portfolio() {
         return (
             <div className="modal-content">
                 <div>{description}</div>
-                <button className='lienGithub' onClick={handleGithubClick}>Lien Github</button>
+                {/*<button className='lienGithub' onClick={handleGithubClick}>Lien Github</button>*/}
             </div>
         );
     }
@@ -52,13 +65,28 @@ function Portfolio() {
                 <span>Mes Projets</span>
                 <span>Portfolio</span>
 
+                {showLeftArrow && (
+                    <img
+                        src={ArrowLeft}
+                        alt="Flèche de gauche"
+                        className="navigation-arrow left-arrow"
+                        onClick={() => swiperRef.current.swiper.slidePrev()}
+
+                    />
+                )}
+
                 {/* Slider swiper pour le 'carrousel' d'images */}
+
                 <Swiper
                     spaceBetween={30}
                     slidesPerView={3}
                     grabCursor={true}
                     className='Portfolio-slider'
+                    onSlideChange={handleSlideChange}
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
+                    {/*<img src={ArrowLeft} alt='Flèche de gauche'></img>
+                    <img src={ArrowRight} alt='Flèche de droite'></img>*/}
                     <SwiperSlide>
                         <img src={Booki} alt='Photo du site Booki' onClick={() => openModal(Booki, (
                             <p>
@@ -172,6 +200,14 @@ function Portfolio() {
                         ), 'https://github.com/Fannydev974/P10-724Events',)} />
                     </SwiperSlide>
                 </Swiper>
+                {showRightArrow && (
+                    <img
+                        src={ArrowRight}
+                        alt="Flèche de droite"
+                        className="navigation-arrow right-arrow"
+                        onClick={() => swiperRef.current.swiper.slideNext()}
+                    />
+                )}
             </div>
 
             {modalOpen && (

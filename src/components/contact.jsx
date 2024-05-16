@@ -38,7 +38,7 @@ function contact() {
                 </div>
                 <div className="contact-infos-number">
                     <img src={PhoneIcon} className="contact-infos-icon" />
-                    <a href="tel:0766360280" aria-label="Lien vers le numéro de téléphone" className="contact-infos-text">0766360280</a>
+                    <a href="tel:0766360280" aria-label="Lien vers le numéro de téléphone" className="contact-infos-text">07.66.36.02.80</a>
                 </div>
                 <div className="contact-infos-mail">
                     <img src={MailIcon} className="contact-infos-icon" />

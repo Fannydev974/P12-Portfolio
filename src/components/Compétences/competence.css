@@ -1,14 +1,15 @@
+/* Styles généraux */
+
 #competences {
     position: relative;
     top: 338px;
 }
 
 #competences .works {
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem;
     display: flex;
     height: 60vh;
     margin-top: 4rem;
-    width: 100%;
 }
 
 .title_competences {
@@ -24,188 +25,10 @@
     top: 20px;
 }
 
-/*#competences {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#competences span:nth-child(1) {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-}*/
-
-
-/*.awesome span:nth-child(2) {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.awesome span:nth-child(2) {
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-}*/
-
-.awesome span {
-    display: flex;
-    font-size: larger;
-    flex-direction: row;
-}
-
-.awesome {
-    font-size: x-large;
-}
-
-.title_domaines span {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-
-/* Right */
-.w-right {
-    position: relative;
-}
-
-#competenceIcons {
-    width: 60%;
-}
-
-.title_icons span {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-#competenceIcons span {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-}
-
-.containerIcons {
-    margin-top: 77px;
-    position: relative;
-    width: 23rem;
-    height: 22rem;
-    border-radius: 100%;
-    box-shadow: var(--smboxShadow);
-    top: 2rem;
-    background: white;
-    right: -27%;
-}
-
-.containerIcons>* {
-    transition: all 0.3s ease;
-    font-size: 40px;
-    /*position: absolute;*/
-    transition: all 0.8s ease;
-}
-
-.containerIcons>:nth-child(1) {
-    top: -3rem;
-    left: 11rem;
-
-}
-
-.containerIcons>:nth-child(2) {
-    left: -3rem;
-    top: 11rem;
-}
-
-.containerIcons>:nth-child(3) {
-    left: -2rem;
-    top: 3rem;
-}
-
-.containerIcons>:nth-child(4) {
-    left: 18rem;
-    top: 3rem;
-}
-
-.containerIcons>:nth-child(5) {
-    left: 18rem;
-    top: 11rem;
-}
-
-.containerIcons>:nth-child(6) {
-    left: 4rem;
-    top: 18rem;
-}
-
-.containerIcons>:nth-child(7) {
-    left: 4rem;
-    top: -3rem;
-}
-
-.containerIcons>:nth-child(8) {
-    left: 11rem;
-    top: 18rem;
-}
-
-.contentIcon {
-    width: 6rem;
-    height: 6rem;
-    position: absolute;
-    border-radius: 100%;
-    border: 5px solid #ebebeb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--smboxShadow);
-    /* ombre grise cercle*/
-    /*background: white;*/
-}
-
-.contentIcon>img {
-    transform: scale(0.1);
-
-}
-
-.contentIcon :hover {
-
-    transition: all 0.8s ease;
-    transform: scale(0.5) rotate(360deg);
-
-}
-
-.w-backCircle {
-    position: absolute;
-    height: 13rem;
-    width: 13rem;
-    border-radius: 100%;
-    z-index: -1;
-}
-
-.beigeCircle {
-    background: rgba(252, 166, 31, 0.45);
-    left: 14rem;
-    top: -38px;
-
-}
-
-.greyCircle {
-    background: #F0F0F0;
-    left: 14rem;
-    top: 8rem;
-
-}
-
 .awesome {
     display: flex;
-    position: relative;
-    flex: 1;
     flex-direction: column;
     gap: 2rem;
-}
-
-.awesome>* {
     color: var(--black);
 }
 
@@ -214,43 +37,108 @@
     height: 3rem;
     font-size: medium;
     color: white;
+    background-color: var(--orange);
+    border: none;
+    cursor: pointer;
 }
 
+/* Styles pour la section "DOMAINES DE COMPETENCES" */
 
-/****** Media *********/
-@media only screen and (max-width: 1024px) {
 
-    .works {
-        display: flex;
-        flex-direction: column;
-    }
+.title_domaines span {
+    font-weight: bold;
+    font-size: xx-large;
+    color: black;
+}
 
-    .w-right {
-        display: none;
-    }
+.competence-item {
+    margin-bottom: 20px;
 
 }
 
-@media only screen and (max-width: 768px) {
-
-    #competences .works {
-        margin-top: 25rem;
-    }
-
-    .awesome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .button.s-button {
-        margin-top: 20px;
-    }
+.competence-description {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
 }
 
-@media only screen and (max-width: 480px) {
+.competence-description span {
+    font-size: 1.2rem;
+    /* Ajuster la taille du texte*/
+    color: black;
+    line-height: 2;
+    /* Ajuster l'espacement des lignes */
+}
 
-    .awesome {
-        font-size: 14px;
-    }
+#competenceIcons {
+    width: 30%;
+    height: 100%;
+}
+
+.title_icons {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    width: 183%;
+    margin-bottom: 45px;
+}
+
+.title_icons span {
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+/* Styles pour les icônes et les textes en dessous */
+
+.containerIcons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+    width: 185%;
+    height: 52%;
+    border-radius: 20px;
+    background-color: black;
+    /*box-shadow: var(--smboxShadow);*/
+    /*  top: 2rem;
+        background: white;
+        right: -18%;
+        
+*/
+}
+
+.containerIcons>* {
+    transition: all 0.3s ease;
+    font-size: 40px;
+    /*position: absolute;*/
+    /*  transition: all 0.8s ease;*/
+}
+
+.iconWithText {
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 175px;
+}
+
+.contentIcon {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contentIcon img {
+    width: 122px;
+    display: flex;
+}
+
+.containerIcons span {
+    display: block;
+    text-align: center;
+    color: orange;
+    font-size: 1.2rem;
+
 }

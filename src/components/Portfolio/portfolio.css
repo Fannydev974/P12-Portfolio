@@ -42,6 +42,7 @@
     filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0.25));
     border-radius: 19px;
     cursor: pointer;
+
 }
 
 /* Modal */
@@ -93,11 +94,11 @@
     color: var(--orange);
 }
 
-.modal button {
+/*.modal button {
     margin-top: 10px;
     width: 30px;
     height: 30px;
-}
+}*/
 
 .modal .lienGithub {
     display: flex;
@@ -111,7 +112,32 @@
     color: var(--orange);
 }
 
+/***************************fleches slider**********/
+.navigation-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
 
+.left-arrow {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.Portfolio .right-arrow img {
+    width: 6%;
+    height: 5%;
+    border-radius: 79px;
+    top: 123rem;
+}
 
 .close-button {
     position: absolute;
@@ -138,6 +164,16 @@
 .modal-content {
     display: flex;
     align-items: center;
+    height: 80%;
+}
+
+.modal-content p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.modal-content strong {
+    font-size: xx-large;
 }
 
 .button-container {
