@@ -66,13 +66,26 @@ function Portfolio() {
                 <span>Portfolio</span>
 
                 {showLeftArrow && (
+
                     <img
-                        src={ArrowLeft}
-                        alt="Flèche de gauche"
-                        className="navigation-arrow left-arrow"
-                        onClick={() => swiperRef.current.swiper.slidePrev()}
+                        src={ArrowRight}
+                        alt="Flèche de droite"
+                        className="navigation-arrow right-arrow"
+                        onClick={() => {
+                            console.log('Left arrow clicked');
+                            if (swiperRef && swiperRef.current) {
+                                if (!swiperRef.current.isBeginning) {
+                                    swiperRef.current.slidePrev();
+                                } else {
+                                    console.log('Swiper reference is not defined');
+                                }
+                            }
+                        }
+                        }
+
 
                     />
+
                 )}
 
                 {/* Slider swiper pour le 'carrousel' d'images */}
@@ -83,7 +96,10 @@ function Portfolio() {
                     grabCursor={true}
                     className='Portfolio-slider'
                     onSlideChange={handleSlideChange}
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    onSwiper={(swiper) => {
+                        console.log('Swiper instance:', swiper);
+                        swiperRef.current = swiper; (swiperRef.current = swiper)
+                    }}
                 >
                     {/*<img src={ArrowLeft} alt='Flèche de gauche'></img>
                     <img src={ArrowRight} alt='Flèche de droite'></img>*/}
@@ -202,10 +218,21 @@ function Portfolio() {
                 </Swiper>
                 {showRightArrow && (
                     <img
-                        src={ArrowRight}
-                        alt="Flèche de droite"
-                        className="navigation-arrow right-arrow"
-                        onClick={() => swiperRef.current.swiper.slideNext()}
+                        src={ArrowLeft}
+                        alt="Flèche de gauche"
+                        className="navigation-arrow left-arrow"
+                        onClick={() => {
+                            console.log('Right arrow clicked');
+                            if (swiperRef && swiperRef.current) {
+                                if (!swiperRef.current.isEnd) {
+                                    swiperRef.current.slideNext();
+                                } else {
+                                    console.log('Swiper reference is not defined');
+                                }
+                            }
+                        }}
+
+
                     />
                 )}
             </div>
