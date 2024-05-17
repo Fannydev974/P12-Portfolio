@@ -46,7 +46,7 @@ const Competences = () => {
                         </div>
                     </div>
 
-                    <button className='button s-button'>Télécharger mon cv</button>
+                    {/*<button className='button s-button'>Télécharger mon cv</button>*/}
                 </div>
 
                 <div id='competenceIcons'>

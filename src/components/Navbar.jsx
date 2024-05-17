@@ -1,15 +1,17 @@
 import React from 'react'
 import './Navbar.css'
-import { useContext } from 'react';
+//import { useContext } from 'react';
 //import { LanguageContext } from '../Pages/homepage';
-
+import LogoJsj from '../img/icons/logoJSJ.jpg';
 
 function Navbar() {
     /*const { language } = useContext(LanguageContext);*/
     return (
         <div className='n-wrapper'>
             <div className='n-left'>
-                <div className='n-name'>FH</div>
+                <div className='n-name'>
+                    <img src={LogoJsj} alt='' />
+                </div>
 
             </div>
             <div className='n-right'>

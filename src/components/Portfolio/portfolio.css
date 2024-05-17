@@ -62,7 +62,7 @@
 }
 
 .modal {
-    background-color: white;
+    background-color: gainsboro;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -229,9 +229,16 @@
 
 
 /*******media*******/
+@media only screen and (max-width: 1024px) {
+    .modal {
+        height: 55%;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .modal {
-        height: 525px;
+        height: 838px;
     }
 
     .modal p {

@@ -11,7 +11,7 @@ function Footer() {
                 <div className='icons'>
                     <a href="https://github.com/Fannydev974"><img src={Github} alt='icon github' /></a>
                     <a href="lien_linkedin"><img src={Linkedin} alt='icon linkedin' /></a>
-                    <a href="lien_instagram"><img src={Instagram} alt='icon instagram' /></a>
+                    <a href="https://www.instagram.com/jsjdeveloppement/"><img src={Instagram} alt='icon instagram' /></a>
                 </div>
             </div>
         </footer>
