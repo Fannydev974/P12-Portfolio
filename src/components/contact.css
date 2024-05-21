@@ -119,8 +119,41 @@ textarea {
 
 /********** media **************/
 @media only screen and (max-width: 768px) {
+    #Contact {
+
+        height: 390px;
+    }
+
     #Contact button {
         position: relative;
         left: 58px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    #Contact {
+        width: 90%;
+        padding: 20px 20px 30px 20px;
+    }
+
+    #Contact form {
+        width: 45%;
+        padding: 20px;
+
+    }
+
+    #Contact button {
+        left: 8px;
+        top: 9px;
+        width: 95px;
+    }
+
+    .contact-infos {
+        padding: 10px;
+    }
+
+    .contact-infos-text {
+        overflow-wrap: anywhere;
     }
 }

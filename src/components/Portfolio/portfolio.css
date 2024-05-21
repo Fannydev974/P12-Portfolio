@@ -237,6 +237,13 @@
 
 
 @media only screen and (max-width: 768px) {
+
+    #mes-projets .Portfolio {
+        position: relative;
+        top: 310px;
+    }
+
+
     .modal {
         height: 838px;
     }
@@ -321,5 +328,34 @@
         font-size: xx-small;
         height: 96%;
         width: 115%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .Portfolio .swiper {
+        height: 135px;
+    }
+
+    .Portfolio {
+        position: relative;
+        top: 306px;
+    }
+
+    .modal {
+        height: 755px;
+    }
+
+    .modal-content {
+        width: 99%;
+        height: 85%;
+    }
+
+    .modal p {
+        font-size: larger;
+    }
+
+    .modal-content strong {
+        font-size: x-large;
     }
 }

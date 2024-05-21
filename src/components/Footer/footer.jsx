@@ -13,6 +13,10 @@ function Footer() {
                     <a href="lien_linkedin"><img src={Linkedin} alt='icon linkedin' /></a>
                     <a href="https://www.instagram.com/jsjdeveloppement/"><img src={Instagram} alt='icon instagram' /></a>
                 </div>
+
+            </div>
+            <div className='Droits'>
+                <p>Hadji Fanny - Tous droits réservés - 2024.</p>
             </div>
         </footer>
     );

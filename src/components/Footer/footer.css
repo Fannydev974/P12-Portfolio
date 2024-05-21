@@ -37,9 +37,11 @@
 @media only screen and (max-width: 768px) {
 
     .icons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+
+
 }
 
 /* Media Queries pour mobile */
@@ -47,4 +49,30 @@
     .icons a {
         margin: 10px 0;
     }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer-bar {
+        height: 50%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icons a {
+        margin: -5px 0;
+    }
+
+    .footer .Droits {
+        padding-top: 18px;
+
+    }
+
 }

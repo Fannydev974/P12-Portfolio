@@ -174,10 +174,75 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    #competences {
+        position: relative;
+        top: 190px;
+    }
+
+
     .iconWithText {
         text-align: center;
         margin-right: 20px;
         margin-bottom: 20px;
         width: 124px;
     }
+
+    .title_icons span {
+        position: relative;
+        top: -73px;
+        right: 113px;
+    }
+
+    .containerIcons {
+        position: relative;
+        top: 376px;
+        right: 320px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    #competences {
+        position: relative;
+        top: 165px;
+    }
+
+
+    .containerIcons {
+        display: flex;
+        position: relative;
+        top: 655px;
+        right: 213px;
+        width: 164%;
+    }
+
+    #competenceIcons {
+        display: flex;
+        position: relative;
+        /* top: 915px;
+        right: 200px;*/
+        flex-direction: column;
+    }
+
+    .iconWithText {
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 97px;
+    }
+}
+
+.title_icons {
+    position: relative;
+    top: 767px;
+    right: 92px;
+}
+
+.competence-description {
+    width: 187%;
 }

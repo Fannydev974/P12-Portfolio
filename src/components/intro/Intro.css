@@ -134,10 +134,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    #a-propos img {
+        height: 30%;
+    }
+
     .intro {
         flex-direction: column;
         height: auto;
         margin-top: 3rem;
+    }
+
+    .description_name span {
+        padding-left: 0;
     }
 
     .i-left {
@@ -212,4 +221,12 @@
     .contactClose {
         bottom: 65%;
     }
+}
+
+@media only screen and (max-width: 425px) {
+    #a-propos img {
+        height: 30%;
+    }
+
+
 }

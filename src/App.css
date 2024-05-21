@@ -38,3 +38,11 @@
   color: var(--orange);
   border: 1px solid var(--orange);
 }
+
+
+@media only screen and (max-width: 425px) {
+
+  .App {
+    padding: 0.5rem 0.5rem;
+  }
+}

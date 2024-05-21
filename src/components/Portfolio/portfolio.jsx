@@ -210,7 +210,7 @@ function Portfolio() {
                                 <strong>Présentation :</strong>
                                 724events, une agence événementielle, a fait une refonte de son site vitrine. Il on fait appel a moi pour résoudre les problèmes techniques et optimiser le site pour répondre pleinement aux besoins de l'agence.
                                 <strong>Objectif :</strong>
-                                Ma mission a été d'effectuer un débogage complet et d'optimiser le site web de 724events, plus précisement Réparer le carrousel en affichant les évènements par date en ordre décroissant. Réaliser le filtrage de la section "Nos réalisations". Afficher les bons mois des réalisations de la section "Nos réalisations". Corriger le formulaire, et afficher un message de confirmation. Et Ajouter le dernier évènement au footer avec l'image et la date.
+                                Effectuer un débogage complet et optimiser le site web de 724events, plus précisement Réparer le carrousel en affichant les évènements par date en ordre décroissant. Réaliser le filtrage de "Nos réalisations". Afficher les bons mois des réalisations de "Nos réalisations". Corriger le formulaire, et afficher un message de confirmation. Et Ajouter le dernier évènement au footer avec l'image et la date.
                                 <strong>Pour cela j'ai utilisée: "Débogage", "Test unitaire", "Optimisation".</strong>
                             </p>
                         ), 'https://github.com/Fannydev974/P10-724Events',)} />
