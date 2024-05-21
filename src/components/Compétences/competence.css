@@ -248,7 +248,25 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
+
+    #competences {
+        position: relative;
+        top: 52px;
+    }
+
+    .title_competences span {
+        font-size: 2rem;
+    }
+
+    .title_domaines span {
+        font-size: 1.5rem;
+    }
+
+    .awesome {
+        gap: 10px;
+    }
+
     .competence-description {
         width: 137%;
         gap: 2px;
@@ -256,7 +274,8 @@
 
     .title_icons span {
         position: relative;
-        top: 82px;
+        top: -10px;
+        font-size: large;
     }
 
     .containerIcons {
