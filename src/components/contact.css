@@ -157,3 +157,28 @@ textarea {
         overflow-wrap: anywhere;
     }
 }
+
+@media only screen and (max-width: 320px) {
+
+
+    #Contact {
+        width: 86%;
+        height: 180px;
+    }
+
+    #Contact form {
+        visibility: hidden;
+
+    }
+
+    .contact-infos {
+        position: sticky;
+        right: 154px;
+    }
+
+    .contact-infos-text {
+        overflow-wrap: normal;
+    }
+
+
+}

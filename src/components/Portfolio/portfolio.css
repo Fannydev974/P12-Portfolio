@@ -359,3 +359,23 @@
         font-size: x-large;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    #mes-projets .Portfolio {
+        position: relative;
+        top: 235px;
+    }
+
+    .modal {
+        height: auto;
+    }
+
+    .modal-content {
+        height: auto;
+    }
+
+
+
+
+
+}

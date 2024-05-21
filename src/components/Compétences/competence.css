@@ -246,3 +246,36 @@
 .competence-description {
     width: 187%;
 }
+
+
+@media only screen and (max-width: 320px) {
+    .competence-description {
+        width: 137%;
+        gap: 2px;
+    }
+
+    .title_icons span {
+        position: relative;
+        top: 82px;
+    }
+
+    .containerIcons {
+        position: relative;
+        top: 825px;
+        width: 120%;
+        height: auto;
+    }
+
+    .iconWithText {
+        width: 75px;
+    }
+
+    .contentIcon {
+        margin-bottom: 0;
+    }
+
+    .contentIcon img {
+        width: 74px;
+    }
+
+}
