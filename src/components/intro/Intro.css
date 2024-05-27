@@ -234,3 +234,24 @@
 
 
 }
+
+@media only screen and (max-width: 390px) {
+    #a-propos {
+        position: relative;
+        top: -156px;
+    }
+
+    #a-propos img {
+        height: 137%;
+        width: 100%;
+    }
+
+    .description_name span {
+        font-size: medium;
+    }
+
+    #competences {
+        position: relative;
+        top: -108px;
+    }
+}

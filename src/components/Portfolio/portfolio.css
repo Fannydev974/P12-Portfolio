@@ -374,8 +374,31 @@
         height: auto;
     }
 
+}
 
+@media only screen and (max-width: 390px) {
+    #mes-projets .Portfolio {
+        position: relative;
+        top: 281px;
+    }
 
+    .Portfolio span:nth-child(1) {
+        color: var(--black);
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
+    .Portfolio span:nth-child(2) {
+        color: var(--orange);
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
+    .Portfolio img {
+        height: 90%;
+    }
+
+    .Portfolio .swiper {
+        height: 110px;
+    }
 }

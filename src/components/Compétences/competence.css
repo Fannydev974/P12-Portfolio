@@ -298,3 +298,41 @@
     }
 
 }
+
+@media only screen and (max-width: 390px) {
+    .containerIcons {
+        width: 275%;
+        top: 437px;
+        right: 231px;
+        position: relative;
+    }
+
+    .title_competences span {
+        font-size: 1.5rem;
+        position: relative;
+        top: -136px;
+    }
+
+    .title_domaines span {
+        font-size: 1rem;
+    }
+
+    .competence-description {
+        width: 162%;
+        gap: 2px;
+        display: flex;
+        position: relative;
+        top: 6px;
+    }
+
+    .awesome {
+        position: relative;
+        top: -179px;
+    }
+
+    .title_icons span {
+        position: relative;
+        top: -310px;
+
+    }
+}
