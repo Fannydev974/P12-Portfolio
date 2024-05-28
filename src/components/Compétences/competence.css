@@ -88,6 +88,8 @@
     font-size: xx-large;
     font-weight: bold;
     color: black;
+    position: relative;
+    bottom: 766px;
 }
 
 /* Styles pour les icônes et les textes en dessous */
@@ -101,6 +103,8 @@
     height: 52%;
     border-radius: 20px;
     background-color: black;
+    position: relative;
+    right: -19px;
     /*box-shadow: var(--smboxShadow);*/
     /*  top: 2rem;
         background: white;
@@ -190,8 +194,8 @@
 
     .title_icons span {
         position: relative;
-        top: -73px;
-        right: 113px;
+        top: -162px;
+        right: 224px;
     }
 
     .containerIcons {
