@@ -401,4 +401,12 @@
     .Portfolio .swiper {
         height: 110px;
     }
+
+    #mes-projets .right-arrow {
+        top: 21rem;
+    }
+
+    #mes-projets .left-arrow {
+        top: 21rem;
+    }
 }

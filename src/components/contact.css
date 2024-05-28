@@ -199,4 +199,22 @@ textarea {
         display: flex;
         flex-direction: row;
     }
+
+    .contact-infos-name {
+        position: relative;
+        left: -23px;
+        top: -10px;
+    }
+
+    .contact-infos-number {
+        position: relative;
+        left: -30px;
+        top: -23px;
+    }
+
+    .contact-infos-mail {
+        position: relative;
+        right: 203px;
+        top: 24px;
+    }
 }
