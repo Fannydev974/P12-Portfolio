@@ -56,49 +56,49 @@ const Competences = () => {
                     <div className='containerIcons'>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Html} alt='' />
+                                <img src={Html} alt='html icon' />
                             </div>
                             <span>HTML 5</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Css} alt='' />
+                                <img src={Css} alt='css icon' />
                             </div>
                             <span>CSS 3</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={JavaScript} alt='' />
+                                <img src={JavaScript} alt='javascript icon' />
                             </div>
                             <span>JAVASCRIPT</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={IconReact} alt='' />
+                                <img src={IconReact} alt='react icon' />
                             </div>
                             <span>React</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Sass} alt='' />
+                                <img src={Sass} alt='sass icon' />
                             </div>
                             <span>SASS</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Redux} alt='' />
+                                <img src={Redux} alt='redux icon' />
                             </div>
                             <span>REDUX</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Swagger} alt='' />
+                                <img src={Swagger} alt='swagger icon' />
                             </div>
                             <span>SWAGGER</span>
                         </div>
                         <div className='iconWithText'>
                             <div className='contentIcon'>
-                                <img src={Github} alt='' />
+                                <img src={Github} alt='github icon' />
                             </div>
                             <span>GITHUB</span>
                         </div>
@@ -109,4 +109,4 @@ const Competences = () => {
     )
 };
 
-export default Competences
+export default Competences;

@@ -138,6 +138,7 @@
 .contentIcon img {
     width: 122px;
     display: flex;
+    transition: all 0.3s ease;
 }
 
 .containerIcons span {
@@ -146,6 +147,22 @@
     color: orange;
     font-size: 1.2rem;
 
+}
+
+/* Définir l'animation de rotation */
+@keyframes rotateAndMove {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(20px);
+
+    }
+}
+
+.containerIcons .contentIcon img:hover {
+    animation: rotateAndMove 1s ease-in-out;
 }
 
 /*******media*******/
