@@ -13,7 +13,7 @@
 
 #a-propos img {
     position: absolute;
-    width: 91%;
+    width: 95%;
     height: 40%;
     margin-top: -22px;
 }
@@ -54,7 +54,7 @@
 .i-name>:nth-child(3) {
     color: var(--gray);
     font-weight: 100;
-    font-size: 21px;
+    font-size: 63px;
     margin-top: 10px;
 }
 
