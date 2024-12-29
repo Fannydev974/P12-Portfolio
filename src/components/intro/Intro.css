@@ -14,7 +14,7 @@
 #a-propos img {
     position: absolute;
     width: 95%;
-    height: 40%;
+    height: 54%;
     margin-top: -22px;
 }
 
@@ -40,13 +40,13 @@
 }
 
 .i-name>:nth-child(1) {
-    color: var(--black);
+    color: white;
     font-weight: bold;
     font-size: 3rem;
 }
 
 .i-name>:nth-child(2) {
-    color: var(--orange);
+    color: #f703c7;
     font-weight: bold;
     font-size: 3rem;
 }
@@ -57,7 +57,6 @@
     font-size: 63px;
     margin-top: 10px;
 }
-
 
 .i-button {
     width: 6rem;
@@ -114,6 +113,61 @@
     left: 56%;
     filter: blur(72px);
 }*/
+
+
+/* Conteneur pour l'indicateur de défilement */
+.scroll-indicator {
+    position: absolute;
+    bottom: 287px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style du cercle */
+.scroll-indicator .circle {
+    width: 66px;
+    height: 96px;
+    border: 2px solid #f703c7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Style de la flèche */
+.scroll-indicator .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(135deg);
+    position: absolute;
+    animation: arrow-animation 1.5s infinite;
+}
+
+/* Animation pour la flèche */
+@keyframes arrow-animation {
+    0% {
+        transform: translateY(-10px) rotate(135deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(10px) rotate(135deg);
+        opacity: 0;
+    }
+}
+
+
+
 
 
 /********* Media *********/

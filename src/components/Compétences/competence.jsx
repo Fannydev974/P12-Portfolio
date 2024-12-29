@@ -11,22 +11,17 @@ import Github from '../../img/icons/github-icon.png';
 
 const Competences = () => {
 
-    {/* const DownloadCV = () => {
-        // pour le téléchargement du CV
-        // ouvrir l'URL du CV dans une nouvelle fenêtre
-        window.open('chemin de mon fichier cv', 'le nom'); */}
-
-
-
     return (
-
         <div id="competences">
             <div className='title_competences'>
-                <span>Mes Compétences</span>
+                <span>Mon expertise</span>
             </div>
             <div className='works'>
                 <div className='awesome'>
-                    <div className='title_domaines'><span>DOMAINES DE COMPETENCES</span></div>
+                    <div className='title_domaines'>
+                        <span>DOMAINES DE COMPETENCES</span>
+                    </div>
+                    {/* Utilisation de Flexbox pour les 4 domaines côte à côte */}
                     <div className="competence-description">
                         <div className="competence-item">
                             <span> ▸GESTION DE PROJETS WEB <br />
@@ -45,14 +40,13 @@ const Competences = () => {
                                 Compatible tous supports, tablettes & mobile.</span>
                         </div>
                     </div>
-
-                    {/*<button className='button s-button'>Télécharger mon cv</button>*/}
                 </div>
 
                 <div id='competenceIcons'>
                     <div className='title_icons'>
                         <span>COMPETENCES EN DEVELOPPEMENT</span>
                     </div>
+                    {/* Conteneur des compétences en développement */}
                     <div className='containerIcons'>
                         <div className='iconWithText'>
                             <div className='contentIcon'>

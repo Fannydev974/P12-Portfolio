@@ -1,6 +1,6 @@
 //import React, { useState } from 'react';
 import './Intro.css';
-import ImgPortfolio from '../../img/img 4.jpg';
+import ImgPortfolio from '../../img/icons/Fond-header.webp';
 
 
 
@@ -13,9 +13,9 @@ function Intro() {
             <div className='intro'>
                 <div className='i-left'>
                     <div className='i-name'>
-                        <span>Développeuse web et mobile </span>
+                        <span>Développeuse Front-End web et mobile </span>
                         <span>Fanny Hadji</span>
-                        <div className='description_name'><span>Création de site vitrine, évènementiels, e-commerce, applications web et mobile, Débug et Référencement naturel SEO. </span>
+                        <div className='description_name'><span>Création de site, applications web et mobile, Débug et Référencement naturel SEO. </span>
                         </div>
                     </div>
                 </div>
@@ -23,6 +23,12 @@ function Intro() {
 
             <div className='i-right'>
                 <div className='fondGris' ></div>
+            </div>
+            {/* Animation Circle and Arrow */}
+            <div className="scroll-indicator">
+                <div className="circle">
+                    <div className="arrow"></div>
+                </div>
             </div>
         </div >
 

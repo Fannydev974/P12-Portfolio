@@ -8,13 +8,16 @@
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
   --orangeCard: rgba(252, 166, 31, 0.45);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --pinkCard: rgb(255, 0, 255);
 }
 
 * {
   font-family: 'Gumela';
   font-weight: normal;
   font-size: 17px;
+  /*background-color: black;*/
 }
+
 
 .App {
   padding: 0.5rem 1.5rem;
@@ -28,8 +31,8 @@
   color: white;
   font-size: 14px;
   padding: 11px 24px 11px 24px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  background: linear-gradient(180deg, #f703c7 26.71%, #eeebee 99.36%);
+  box-shadow: 0px 20px 24px 3px rgb(255, 0, 255);
 }
 
 .button:hover {

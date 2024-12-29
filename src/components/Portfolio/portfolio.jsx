@@ -63,7 +63,7 @@ function Portfolio() {
 
                 {/* Titre */}
                 <span>Mes Projets</span>
-                <span>Portfolio</span>
+
 
                 {showLeftArrow && (
 
@@ -240,7 +240,7 @@ function Portfolio() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal" onClick={(event) => event.stopPropagation()}>
-                        <img src={selectedImage} alt="Image" />
+
                         <ModalContent
                             description={selectedDescription}
                             githubLink={selectedGithubLink}

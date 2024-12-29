@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 //import { useContext } from 'react';
 //import { LanguageContext } from '../Pages/homepage';
-import LogoJsj from '../img/icons/logoJSJ.jpg';
+import LogoJsj from '../img/icons/logofinal.jpg';
 
 function Navbar() {
     /*const { language } = useContext(LanguageContext);*/
@@ -18,8 +18,9 @@ function Navbar() {
                 <div className='n-list'>
                     <ul style={{ listStyleType: 'none' }}> { /* pour enlever les point de liste avant les liens */}
                         <li><a href="#a-propos" style={{ textDecoration: 'none' }}>A Propos</a></li>
-                        <li><a href="#competences" style={{ textDecoration: 'none' }}>Compétences</a></li>
-                        <button className='button n-button'><li><a href="#mes-projets" style={{ textDecoration: 'none' }}>Mes projets</a></li></button>
+                        <li><a href="#competences" style={{ textDecoration: 'none' }}>Expertise</a></li>
+                        <button className='button n-button'><li><a href="#mes-projets" style={{ textDecoration: 'none' }}>Projets</a></li></button>
+                        <li><a href="#contact" style={{ textDecoration: 'none' }}>Contact</a></li>
                     </ul>
                 </div>
 
