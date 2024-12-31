@@ -18,7 +18,7 @@
 .n-name img {
     width: 150px;
     height: 120px;
-    border-radius: 63px;
+    /* border-radius: 63px;*/
 }
 
 .n-right {
@@ -44,7 +44,7 @@
 
 .n-list>ul>li>a:hover {
     cursor: pointer;
-    color: var(--orange);
+    color: var(--pink);
 
 }
 
@@ -61,7 +61,7 @@ a {
     background: white;
     cursor: pointer;
     color: var(--orange);
-    border: 1px solid var(--orange);
+    border: 1px solid var(--pink);
 }
 
 

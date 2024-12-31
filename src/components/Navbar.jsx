@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 //import { useContext } from 'react';
 //import { LanguageContext } from '../Pages/homepage';
-import LogoJsj from '../img/icons/logofinal.jpg';
+import LogoJsj from '../img/icons/logofinale.webp';
 
 function Navbar() {
     /*const { language } = useContext(LanguageContext);*/
