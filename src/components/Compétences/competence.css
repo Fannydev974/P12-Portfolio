@@ -40,6 +40,7 @@
 
 .title_domaines span {
     font-size: larger;
+    color: white;
 }
 
 /* Disposition des éléments des domaines de compétences */
@@ -62,6 +63,10 @@
     line-height: 1.5;
 }
 
+.competence-item span {
+    background-color: transparent;
+}
+
 /* Styles pour les icônes de compétences */
 #competenceIcons {
     width: 100%;
@@ -73,6 +78,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: white;
 }
 
 .title_icons span {
@@ -85,9 +91,11 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
-    border: 2px solid black;
+    border: 2px solid pink;
     height: 160px;
     background-color: #eeebee;
+    border-radius: 90px;
+    box-shadow: 0px 20px 24px 3px var(--pink);
 }
 
 /* Style pour chaque icône avec son texte */
@@ -100,6 +108,7 @@
     /* Animation fluide */
     cursor: pointer;
     /* Ajout de la main au survol */
+    background-color: transparent;
 }
 
 /* Conteneur des images des icônes */
@@ -113,6 +122,12 @@
 .iconWithText span {
     font-size: 1rem;
     font-weight: bold;
+    background-color: transparent;
+}
+
+.contentIcon {
+    background-color: transparent;
+
 }
 
 /* Animation sur le survol des icônes */

@@ -10,7 +10,7 @@
 /* Head*/
 
 .Portfolio span:nth-child(1) {
-    color: var(--black);
+    color: white;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -135,16 +135,16 @@
 }
 
 #mes-projets .right-arrow {
-    width: 4%;
-    height: 5%;
-    border-radius: 79px;
+    width: 3%;
+    height: 7%;
+    /*border-radius: 79px;*/
     top: 19rem;
 }
 
 #mes-projets .left-arrow {
-    width: 4%;
-    height: 5%;
-    border-radius: 79px;
+    width: 3%;
+    height: 7%;
+    /* border-radius: 79px;*/
     top: 19rem;
 }
 

@@ -11,8 +11,8 @@ import Kasa from '../../img/kasa.png';
 import NinaCarducci from '../../img/ninacarducci.png';
 import Events from '../../img/724events.png';
 import Printit from '../../img/printit.png';
-import ArrowLeft from '../../img/arrowLeft.jpg';
-import ArrowRight from '../../img/arrowRight.jpg'
+import ArrowLeft from '../../img/flecheroseGauche.webp';
+import ArrowRight from '../../img/flecherose.png'
 
 function Portfolio() {
     const [modalOpen, setModalOpen] = useState(false);

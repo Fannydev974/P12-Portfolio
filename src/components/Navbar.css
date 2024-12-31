@@ -31,6 +31,7 @@
 
 .n-list {
     flex: 10;
+
 }
 
 .n-list>ul {
@@ -39,17 +40,17 @@
     margin-right: 4rem;
     align-items: center;
     justify-content: end;
-    color: var(--black);
+    color: white;
 }
 
 .n-list>ul>li>a:hover {
     cursor: pointer;
-    color: var(--pink);
+    color: white;
 
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 .button a {
