@@ -46,7 +46,7 @@
 
 }
 
-/* Modal */
+/* Modal Overlay */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -61,57 +61,151 @@
     z-index: 9999;
 }
 
+/* Modal Container */
 .modal {
     background-color: gainsboro;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    height: 60%;
+    flex-direction: row;
+    height: auto;
     width: 80%;
-    flex-direction: column;
+    height: 90%;
+    gap: 20px;
+    overflow: hidden;
 }
 
-.modal img {
-    width: 45%;
-    max-height: 20vh;
-    margin-right: 20px;
-}
-
-.modal p {
-
+/* Section de l'image (gauche) */
+.modal-left {
     flex: 1;
-    font-size: large;
+    /* Prend une part équitable de l'espace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.modal-left img {
+    max-width: 100%;
+    max-height: 79vh;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section du contenu (droite) */
+.modal-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    font-weight: 500;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px;
+
 }
 
-.modal strong {
+.modal-right p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+.modal-right strong {
     font-weight: bold;
     color: var(--pinkCard);
 }
 
-/*.modal button {
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-}*/
-
-.modal .lienGithub {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 225px;
-    right: 350px;
-    width: 76px;
-    height: 50px;
-    border-radius: 7px;
-    color: var(--orange);
+/* Bouton de fermeture */
+.modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fe81df;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
+.modal .close-button:hover {
+    transform: scale(1.2);
+    color: #555;
+}
+
+/* Lien Github */
+/*.modal .lienGithub {
+    align-self: flex-start;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 7px;
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal .lienGithub:hover {
+    background-color: darkorange;
+    transform: translateY(-2px);
+}*/
+.modal-content .lienGithub {
+    align-self: flex-start;
+    background-color: var(--pinkCard);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal-content .lienGithub:hover {
+    background-color: gray;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+.modal-content {
+    /* display: flex;
+    align-items: center;
+    height: 90%;
+*/
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 14px;
+}
+
+.modal-content p {
+    /*font-size: x-large;
+    font-weight: bold;
+    color: dimgray;
+*/
+    font-size: 20px;
+    color: lightgray;
+    text-align: justify;
+}
+
+.modal-content strong {
+    font-size: larger;
+
+}
+
+
 
 /***************************fleches slider**********/
 .navigation-arrow {
@@ -177,21 +271,7 @@
     height: 100%;
 }
 
-.modal-content {
-    display: flex;
-    align-items: center;
-    height: 90%;
-}
 
-.modal-content p {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.modal-content strong {
-    font-size: larger;
-
-}
 
 .button-container {
     display: flex;

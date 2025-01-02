@@ -57,12 +57,19 @@ a {
     color: white;
 }
 
-.button a:hover {
+/*.button a:hover {
     text-decoration: none;
     background: white;
     cursor: pointer;
     color: var(--orange);
     border: 1px solid var(--pink);
+}*/
+.button li {
+    background-color: transparent;
+}
+
+.button li a {
+    background-color: transparent;
 }
 
 
