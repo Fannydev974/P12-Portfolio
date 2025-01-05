@@ -17,6 +17,13 @@
 
 }
 
+.footer-bar img {
+    width: 80px;
+}
+
+.Droits {
+    color: #eee;
+}
 
 /*********Media**********/
 .footer {
@@ -27,11 +34,9 @@
 .icons {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
-.icons a {
-    margin: 0 10px;
-}
 
 /* Media Queries pour tablette */
 @media only screen and (max-width: 768px) {

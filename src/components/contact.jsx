@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileIcon from '../img/icons/profile_icon.png';
 import PhoneIcon from '../img/icons/phone_icon.png';
 import MailIcon from '../img/icons/email_icon.png';
+import LogoJsj from '../img/icons/logofinale.webp';
 import './contact.css';
 function contact() {
     const handleSubmit = (e) => {
@@ -30,11 +31,14 @@ function contact() {
                 <textarea name="message" id="message" cols="30" rows="10" ></textarea>
                 <button type='submit'>Envoyer</button>
             </form>
-
+            <div className='fondContact'>
+                <img src={LogoJsj} className='logoFond' alt='logo' />
+            </div>
             <div className="contact-infos">
+
                 <div className="contact-infos-name">
                     <img src={ProfileIcon} className="contact-infos-icon" alt="Profile Icon" />
-                    <p className="contact-infos-text">Fanny Hadji</p>
+                    <p className="contact-infos-text">Fanny Hadji<br></br>JSJ Développement</p>
                 </div>
                 <div className="contact-infos-number">
                     <img src={PhoneIcon} className="contact-infos-icon" />
@@ -44,6 +48,7 @@ function contact() {
                     <img src={MailIcon} className="contact-infos-icon" />
                     <a href="devfanny91@outlook.com" aria-label="Lien vers l'adresse e-mail" className="contact-infos-text">devfanny91@outlook.com</a>
                 </div>
+
             </div>
         </div>
     )

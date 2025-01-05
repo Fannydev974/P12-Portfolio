@@ -1,6 +1,6 @@
 #Contact {
     background-color: rgba(97, 95, 99, 0.051);
-    /*border: 2px solid black;*/
+    /*border: 2px solid #fe81df;*/
     padding: 20px 20px 50px 20px;
     display: flex;
     justify-content: space-around;
@@ -15,9 +15,14 @@
     width: 45%;
     padding: 45px;
     gap: 5px;
-    background: linear-gradient(180deg, #f703c7 26.71%, #eeebee 99.36%);
+    background: linear-gradient(180deg, #fe81df 26.71%, #eeebee 99.36%);
     color: white;
     border-radius: 30px;
+
+}
+
+#Contact label {
+    background-color: transparent;
 }
 
 #Contact input {
@@ -25,10 +30,13 @@
     height: 35px;
     border: inherit;
     border-radius: 20px;
+    background-color: transparent;
 }
 
 textarea {
     color: black;
+    background-color: transparent;
+    border: inherit;
 }
 
 #Contact button {
@@ -39,7 +47,12 @@ textarea {
     position: relative;
     left: 209px;
     top: 25px;
+    color: black;
+    background-color: transparent;
+}
 
+#Contact button:hover {
+    opacity: 0.5;
 }
 
 .contact-infos {
@@ -49,16 +62,24 @@ textarea {
     gap: 30px;
     width: 277px;
     position: relative;
-    height: 312px;
+    height: 258px;
     padding: 20px;
     top: 75px;
+    margin-top: 130px;
+    margin-left: 61px;
+    background-color: #eeebee;
+    border-radius: 0px 70px 70px 70px;
+    box-shadow: 20px 20px 24px 3px var(--pink);
 }
+
+
 
 .contact-infos-name {
     display: flex;
     align-items: center;
     cursor: pointer;
     gap: 10px;
+    background-color: transparent;
 }
 
 .contact-infos-number {
@@ -66,6 +87,7 @@ textarea {
     align-items: center;
     cursor: pointer;
     gap: 10px;
+    background-color: transparent;
 }
 
 .contact-infos-mail {
@@ -73,6 +95,7 @@ textarea {
     align-items: center;
     cursor: pointer;
     gap: 10px;
+    background-color: transparent;
 }
 
 /*.contact-infos name {
@@ -93,14 +116,34 @@ textarea {
     cursor: pointer;
 }*/
 
+.fondContact {
+    width: 12%;
+}
+
+.fondContact img {
+    width: 300px;
+}
+
+
+
+
+.contact-infos img {
+    width: 66px;
+    display: flex;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+
 .contact-infos-icon {
     width: 45px;
     height: auto;
     transition: all 0.8s ease;
-
+    background-color: transparent;
 }
 
-.contact-infos-icon :hover {
+.contact-infos-icon:hover {
     transition: all 0.8s ease;
     transform: scale(1.1) rotate(360deg)
 }
@@ -109,6 +152,7 @@ textarea {
     font-size: 15px;
     text-decoration: none;
     color: black;
+    background-color: transparent;
 }
 
 .contact-infos-text:hover {
@@ -133,6 +177,7 @@ textarea {
 .contact-infos-icon:hover {
     animation: rotateAndMove 1s ease-in-out;
 }
+
 
 
 

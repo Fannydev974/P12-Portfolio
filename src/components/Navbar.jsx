@@ -10,7 +10,7 @@ function Navbar() {
         <div className='n-wrapper'>
             <div className='n-left'>
                 <div className='n-name'>
-                    <img src={LogoJsj} alt='' />
+                    <img src={LogoJsj} alt='logo' />
                 </div>
 
             </div>
