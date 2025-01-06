@@ -11,7 +11,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 110px;
     color: #f703c7;
 }
 
@@ -56,7 +56,7 @@
 .competence-item {
     width: 250px;
     padding: 20px;
-    background: linear-gradient(40deg, #f703c7 12.71%, #eeebee 85.36%);
+    background: linear-gradient(40deg, #0F056B 4.71%, #eeebee 88.36%);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -66,6 +66,7 @@
 
 .competence-item span {
     background-color: transparent;
+    font-weight: 600;
 }
 
 /* Styles pour les icônes de compétences */

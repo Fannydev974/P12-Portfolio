@@ -15,7 +15,7 @@ function Footer() {
 
             </div>
             <div className='Droits'>
-                <p>Hadji Fanny - Tous droits réservés - 2024.</p>
+                <p>© 2024 Hadji Fanny - Tous droits réservés -</p>
             </div>
         </footer>
     );

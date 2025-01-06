@@ -57,13 +57,14 @@ a {
     color: white;
 }
 
-/*.button a:hover {
+.button a:hover {
     text-decoration: none;
     background: white;
     cursor: pointer;
-    color: var(--orange);
-    border: 1px solid var(--pink);
-}*/
+    color: #fe81df;
+
+}
+
 .button li {
     background-color: transparent;
 }

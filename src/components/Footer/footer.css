@@ -1,6 +1,8 @@
 .footer {
-    background-color: #F0F0F0;
+    background-color: transparent;
     padding: 10px 0;
+    text-align: center;
+    border-top: 5px solid #FF00FF;
 
 }
 
@@ -26,10 +28,6 @@
 }
 
 /*********Media**********/
-.footer {
-    text-align: center;
-    padding: 20px 0;
-}
 
 .icons {
     display: flex;

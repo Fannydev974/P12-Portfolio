@@ -15,7 +15,7 @@ function Intro() {
                     <div className='i-name'>
                         <span>Développeuse Front-End web et mobile </span>
                         <span>Fanny Hadji</span>
-                        <div className='description_name'><span>Création de site, applications web et mobile, Débug et Référencement naturel SEO. </span>
+                        <div className='description_name'><span>Conception et refonte de site web, Applications web et mobile, Débug, Audit et Référencement naturel SEO. </span>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@
     width: 45%;
     padding: 45px;
     gap: 5px;
-    background: linear-gradient(180deg, #fe81df 26.71%, #eeebee 99.36%);
+    background: linear-gradient(180deg, #0F056B 6.71%, #eeebee 99.36%);
     color: white;
     border-radius: 30px;
 
@@ -97,6 +97,83 @@ textarea {
     gap: 10px;
     background-color: transparent;
 }
+
+.status-message {
+    color: #fe81df;
+}
+
+/* Conteneur du message */
+.status-message {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.status-message.success {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out;
+    margin-top: 50px;
+}
+
+.status-message.error {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out;
+
+}
+
+/* Animation feu d'artifice */
+@keyframes fireworks {
+    0% {
+        transform: scale(0.5) translateX(-50%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2) translateX(-50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateX(-50%);
+        opacity: 0;
+    }
+}
+
+/* Animation vibration */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50%) translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(-50%) translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-50%) translateX(-5px);
+    }
+}
+
 
 /*.contact-infos name {
     display: flex;
