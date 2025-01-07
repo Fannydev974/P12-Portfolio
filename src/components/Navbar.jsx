@@ -20,7 +20,7 @@ function Navbar() {
                         <li><a href="#a-propos" style={{ textDecoration: 'none' }}>A Propos</a></li>
                         <li><a href="#competences" style={{ textDecoration: 'none' }}>Expertise</a></li>
                         <button className='button n-button'><li><a href="#mes-projets" style={{ textDecoration: 'none' }}>Projets</a></li></button>
-                        <li><a href="#contact" style={{ textDecoration: 'none' }}>Contact</a></li>
+                        <li><a href="#Contact" style={{ textDecoration: 'none' }}>Contact</a></li>
                     </ul>
                 </div>
 

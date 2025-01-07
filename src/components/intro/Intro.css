@@ -185,6 +185,10 @@
 
 @media only screen and (max-width: 1024px) {
 
+    .scroll-indicator {
+        bottom: 226px;
+    }
+
     .contactClose {
         bottom: 73%;
     }
@@ -331,5 +335,17 @@
 
     .scroll-indicator .circle {
         height: 52px;
+    }
+}
+
+@media only screen and (max-width: 266px) {
+
+    #a-propos img {
+        height: 443px;
+    }
+
+    .scroll-indicator .circle {
+        height: 52px;
+        margin-top: 54px;
     }
 }

@@ -259,6 +259,14 @@ textarea {
 
 
 /********** media **************/
+@media only screen and (max-width: 1024px) {
+    .contact-infos {
+        top: 103px;
+    }
+}
+
+
+
 @media only screen and (max-width: 768px) {
     #Contact {
 
@@ -346,6 +354,16 @@ textarea {
     }
 
 
+}
+
+@media only screen and (max-width: 266px) {
+
+
+    #Contact form {
+        width: 88%;
+        padding: 20px;
+        margin-left: -31px;
+    }
 }
 
 /*@media only screen and (max-width: 390px) {

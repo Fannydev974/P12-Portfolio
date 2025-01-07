@@ -49,9 +49,12 @@
 
 }
 
+
 a {
     color: white;
+    background-color: transparent;
 }
+
 
 .button a {
     color: white;
@@ -87,6 +90,14 @@ a {
 @media only screen and (max-width: 768px) {
     .n-wrapper {
         flex-direction: column;
+    }
+
+    .n-name img {
+        top: 0;
+        height: 110px;
+        width: 127px;
+        left: -8px;
+        border-radius: 38px;
     }
 
     .n-left,
@@ -130,7 +141,7 @@ a {
         position: relative;
         top: 135px;
         right: 36px;
-        width: 55%;
+        /*width: 55%;*/
     }
 
 }
@@ -145,4 +156,12 @@ a {
         background-color: transparent;
     }
 
+}
+
+@media only screen and (max-width: 266px) {
+
+    .n-name img {
+        width: 74px;
+        height: 97px;
+    }
 }

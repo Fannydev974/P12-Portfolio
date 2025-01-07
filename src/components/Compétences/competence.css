@@ -145,6 +145,18 @@
     /* Effet au clic */
 }
 
+
+/*************media********/
+@media only screen and (max-width: 1024px) {
+
+    .containerIcons {
+        height: 206px;
+    }
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
     .containerIcons {
         height: 250px;
@@ -161,5 +173,20 @@
 
     .containerIcons {
         height: 480px;
+    }
+}
+
+@media only screen and (max-width: 266px) {
+
+    #competences {
+        margin-top: 245px;
+    }
+
+    .competence-item {
+        width: 203px;
+    }
+
+    .containerIcons {
+        height: 845px;
     }
 }

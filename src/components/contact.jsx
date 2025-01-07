@@ -15,10 +15,10 @@ function Contact() {
 
         emailjs
             .sendForm(
-                'service_p1c1wpv', // Remplacez par votre Service ID
-                'template_zk8tj5t', // Remplacez par votre Template ID
+                'service_p1c1wpv', // Remplacé par mon Service ID
+                'template_zk8tj5t', // Remplacé par mon Template ID
                 e.target,
-                '7xLY3MUH-y7L8242l' // Remplacez par votre Public Key
+                '7xLY3MUH-y7L8242l' // Remplacé par mon Public Key
             )
             .then(
                 (result) => {

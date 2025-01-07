@@ -313,14 +313,22 @@
 /*******media*******/
 @media only screen and (max-width: 1024px) {
     .modal {
-        height: 55%;
+        height: 88%;
+    }
+
+    .modal-content p {
+        font-size: 15px;
+    }
+
+    .modal-right {
+        padding: 0;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
 
-    #mes-projets {}
+
 
     #mes-projets .Portfolio {
         position: relative;
@@ -329,11 +337,12 @@
 
 
     .modal {
-        height: 838px;
+        height: 744px;
     }
 
     .modal p {
-        width: 100%;
+        width: 192%;
+        font-size: smaller;
     }
 
     .modal button {
@@ -487,7 +496,7 @@
     }
 
     .modal .lienGithub {
-        width: 71px;
+        width: 98px;
         position: relative;
         top: -53px;
         height: 50px;
@@ -537,5 +546,29 @@
     #mes-projets .left-arrow {
         top: 11rem;
         left: -1px;
+    }
+}
+
+@media only screen and (max-width: 266px) {
+
+    .modal-content strong {
+        font-size: larger;
+    }
+
+    .modal p {
+        margin-top: 0;
+        top: 169px;
+    }
+
+    .modal .lienGithub {
+        bottom: 266px;
+        right: -16px;
+        top: 0;
+        margin-top: 0;
+        right: 111px;
+    }
+
+    .Portfolio .swiper {
+        height: 137px;
     }
 }
