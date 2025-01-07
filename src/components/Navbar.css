@@ -141,4 +141,8 @@ a {
         top: -139px;
     }
 
+    .n-wrapper li {
+        background-color: transparent;
+    }
+
 }

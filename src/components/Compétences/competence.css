@@ -144,3 +144,22 @@
     transform: translateY(0px) scale(1.05);
     /* Effet au clic */
 }
+
+@media only screen and (max-width: 768px) {
+    .containerIcons {
+        height: 250px;
+    }
+}
+
+
+
+@media only screen and (max-width: 390px) {
+
+    .title_competences {
+        margin-top: 0;
+    }
+
+    .containerIcons {
+        height: 480px;
+    }
+}

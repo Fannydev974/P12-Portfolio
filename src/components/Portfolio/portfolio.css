@@ -320,9 +320,11 @@
 
 @media only screen and (max-width: 768px) {
 
+    #mes-projets {}
+
     #mes-projets .Portfolio {
         position: relative;
-        top: 310px;
+        /*top: 310px;*/
     }
 
 
@@ -449,23 +451,66 @@
     }
 
     .modal {
-        height: auto;
+        height: 80%;
+        width: 80%;
     }
 
     .modal-content {
-        height: auto;
+        height: 95%;
+        width: 97%;
+    }
+
+    .modal-left {
+        width: 44%;
+        height: 8%;
+    }
+
+    .modal-right {
+        width: 56%;
+        height: 0px;
+    }
+
+    .modal img {
+        width: 100%;
+        left: 84px;
+        height: 242%;
+        position: relative;
+    }
+
+    .modal p {
+        font-size: xx-small;
+        position: fixed;
+        margin-top: 92px;
+        width: 58%;
+        top: 176px;
+        right: 75px;
+    }
+
+    .modal .lienGithub {
+        width: 71px;
+        position: relative;
+        top: -53px;
+        height: 50px;
+        right: 20px;
     }
 
 }
 
 @media only screen and (max-width: 390px) {
+
+    #mes-projets {
+        /* margin-top: -350px;*/
+        height: 272px;
+    }
+
     #mes-projets .Portfolio {
         position: relative;
-        top: 281px;
+        top: -116px;
+        height: 113%;
     }
 
     .Portfolio span:nth-child(1) {
-        color: var(--black);
+        color: white;
         font-size: 2rem;
         font-weight: bold;
     }
@@ -485,10 +530,12 @@
     }
 
     #mes-projets .right-arrow {
-        top: 21rem;
+        top: 11rem;
+        right: -1px;
     }
 
     #mes-projets .left-arrow {
-        top: 21rem;
+        top: 11rem;
+        left: -1px;
     }
 }
