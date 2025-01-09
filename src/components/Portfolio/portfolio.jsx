@@ -40,8 +40,8 @@ function Portfolio() {
     };
 
     const closeModal = () => {
-        setSelectedImage(null);
-        setSelectedDescription('');
+        /* setSelectedImage(null);
+         setSelectedDescription('');*/
         setModalOpen(false);
     };
 
@@ -77,9 +77,9 @@ function Portfolio() {
                 {showLeftArrow && (
 
                     <img
-                        src={ArrowRight}
-                        alt="Flèche de droite"
-                        className="navigation-arrow right-arrow"
+                        src={ArrowLeft}
+                        alt="Flèche de gauche"
+                        className="navigation-arrow left-arrow"
                         onClick={() => {
                             console.log('Left arrow clicked');
                             if (swiperRef && swiperRef.current) {
@@ -227,9 +227,9 @@ function Portfolio() {
                 </Swiper>
                 {showRightArrow && (
                     <img
-                        src={ArrowLeft}
-                        alt="Flèche de gauche"
-                        className="navigation-arrow left-arrow"
+                        src={ArrowRight}
+                        alt="Flèche de droite"
+                        className="navigation-arrow right-arrow"
                         onClick={() => {
                             console.log('Right arrow clicked');
                             if (swiperRef && swiperRef.current) {

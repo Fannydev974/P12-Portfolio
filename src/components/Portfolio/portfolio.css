@@ -216,6 +216,7 @@
     height: 30px;
     cursor: pointer;
     z-index: 10;
+    transform: translateY(-50%);
 }
 
 .left-arrow {
@@ -242,6 +243,12 @@
     /* border-radius: 79px;*/
     top: 19rem;
 }
+
+.navigation-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 
 /*.Portfolio .right-arrow img {
     width: 6%;
@@ -466,7 +473,7 @@
 
     .modal-content {
         height: 95%;
-        width: 97%;
+        width: 86%;
     }
 
     .modal-left {

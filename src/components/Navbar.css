@@ -77,6 +77,132 @@ a {
 }
 
 
+/******modale a propos***/
+
+/* --- Modale Styles (À Propos) --- */
+.about-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.about-modal-content {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    text-align: left;
+    overflow-y: auto;
+    /* Permet le défilement si le contenu dépasse */
+    max-height: 90%;
+    /* Limite la hauteur de la modale */
+    border: 3px solid #eee;
+}
+
+.about-modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    background-color: #eee;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.about-modal-content p {
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 16px;
+    white-space: pre-line;
+    /* Conserve les retours à la ligne */
+    color: white;
+}
+
+.about-modal-content p strong {
+    color: #fe81df;
+}
+
+
+.about-close-modal {
+    background: #fe81df;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.about-close-modal:hover {
+    background: #d32f2f;
+}
+
+/* --- Responsive Media Queries pour la Modale --- */
+@media screen and (max-width: 555px) {
+    .about-modal-content {
+        width: 95%;
+        /* Adapter la largeur de la modale */
+        padding: 15px;
+    }
+
+    .about-modal-content h2 {
+        font-size: 20px;
+        /* Réduire la taille du titre */
+    }
+
+    .about-modal-content p {
+        font-size: 14px;
+        /* Réduire la taille du texte */
+    }
+
+    .about-close-modal {
+        padding: 8px 12px;
+        /* Réduire la taille du bouton */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-modal-content {
+        padding: 10px;
+        /* Réduire les marges internes */
+        font-size: 13px;
+        /* Ajuster la taille générale du texte */
+    }
+
+    .about-close-modal {
+        font-size: 12px;
+        /* Réduire encore la taille du bouton */
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 266px) {
+    .about-modal-content {
+        width: 100%;
+        /* Utiliser toute la largeur disponible */
+        padding: 8px;
+    }
+
+    .about-close-modal {
+        font-size: 10px;
+        /* Dernière réduction pour les très petits écrans */
+        padding: 5px 8px;
+    }
+}
+
+
+
+
+
+
 
 
 /********** media **************/
