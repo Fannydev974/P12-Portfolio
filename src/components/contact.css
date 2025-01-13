@@ -259,6 +259,7 @@ textarea {
 
 
 /********** media **************/
+
 @media only screen and (max-width: 1024px) {
     .contact-infos {
         top: 103px;
@@ -338,11 +339,12 @@ textarea {
 
     .contact-infos {
         visibility: hidden;
-        /* position: relative;
+        position: relative;
         right: 354px;
         top: -17%;
         width: 77%;
-        display: flex;*/
+        display: flex;
+
     }
 
     .contact-infos-text {
@@ -366,13 +368,13 @@ textarea {
     }
 }
 
-/*@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
 
     #Contact {
         width: 89%;
         height: 380px;
         position: relative;
-        top: 125px;
+        top: 27px;
     }
 
     #contact form {
@@ -404,4 +406,9 @@ textarea {
         right: 203px;
         top: 24px;
     }
-}*/
+
+    .Droits {
+        position: relative;
+        bottom: 14px;
+    }
+}

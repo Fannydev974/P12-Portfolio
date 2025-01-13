@@ -23,6 +23,8 @@ import ModalNina from '../../img/ModalNina.webp';
 import ModalKasa from '../../img/ModalKasa.webp';
 import Modal724 from '../../img/Modal724.webp';
 
+
+
 function Portfolio() {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);

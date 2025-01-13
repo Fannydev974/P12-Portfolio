@@ -102,13 +102,13 @@
     justify-content: space-between;
     gap: 16px;
     padding: 10px;
-
+    height: 650px;
 }
 
 .modal-right p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #333;
+    color: #eee;
     text-align: justify;
 }
 
@@ -167,7 +167,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    margin-top: 622px;
+    margin-top: 515px;
 }
 
 .modal-content .lienGithub:hover {
@@ -191,17 +191,17 @@
     padding: 14px;
 }
 
-.modal-content p {
+.Modal-content p {
     /*font-size: x-large;
     font-weight: bold;
     color: dimgray;
 */
-    font-size: 20px;
+    font-size: 18px;
     color: lightgray;
     text-align: justify;
 }
 
-.modal-content strong {
+.Modal-content strong {
     font-size: larger;
 
 }
@@ -318,6 +318,8 @@
 
 
 /*******media*******/
+
+
 @media only screen and (max-width: 1024px) {
     .modal {
         height: 88%;
@@ -456,7 +458,7 @@
     }
 
     .modal-content strong {
-        font-size: x-large;
+        font-size: initial;
     }
 }
 
@@ -471,7 +473,7 @@
         width: 80%;
     }
 
-    .modal-content {
+    .Modal-content {
         height: 95%;
         width: 86%;
     }
@@ -504,7 +506,7 @@
 
     .modal .lienGithub {
         width: 98px;
-        position: relative;
+        /*position: relative;*/
         top: -53px;
         height: 50px;
         right: 20px;
@@ -568,11 +570,12 @@
     }
 
     .modal .lienGithub {
-        bottom: 266px;
+        /* bottom: 266px;
         right: -16px;
         top: 0;
         margin-top: 0;
-        right: 111px;
+        right: 111px;*/
+        visibility: hidden;
     }
 
     .Portfolio .swiper {
